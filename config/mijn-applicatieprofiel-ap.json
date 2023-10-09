@@ -1,9 +1,9 @@
 [
 {
-  "name": "mijn-applicatieprofiel-ap",
+  "name": "slimme-raadpleegomgeving-ap",
   "type": "ap",
-  "eap": "MijnApplicatieprofiel-AP.eap",
-  "diagram": "MijnApplicatieprofiel",
+  "eap": "SlimmeRaadpleegomgeving-AP.eap",
+  "diagram": "SlimmeRaadpleegomgeving",
   "template": "mijn-applicatieprofiel-ap.j2",
   "title": "Mijn Applicatieprofiel",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
@@ -11,8 +11,8 @@
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "contributors-file": "stakeholders.csv",
   "contributors-column": "MijnKolom",
-  "site": "site-skeleton/mijn-applicatieprofiel-ap",
-  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
+  "site": "site-skeleton/slimme-raadpleegomgeving-ap",
+  "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/issues",
   "standaardregisterurl": "https://data.vlaanderen.be/standaarden/TODO/CORRECT-URL/index.html"
 }
 ]
