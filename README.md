@@ -46,6 +46,7 @@ Het ophalen van een adres URI op basis van gemeentenaam, straatnaam en huisnumme
 ### Combinatie van straat en huisnummers
 
 Wanneer er meerdere huisnummers geannoteerd worden, raden we aan om elk adres apart te linken.
+De adresvoorstellingen dienen apart beschreven te worden zoals hierboven getoond.
 
 ```
 <div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#"> 
