@@ -1,0 +1,48 @@
+{
+  "naam": "Applicatieprofiel en Vocabularium Slimme Raadpleegomgeving",
+  "rapport": "",
+  "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
+  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO001835",
+  "publicatiedatum": "2023-11-06",
+  "type_toepassing": "Aanbevolen (vrijwillig)",
+  "categorie": "Vocabularium en applicatieprofielen",
+  "beschrijving": "ap-slimme-raadpleegomgeving-config.md",
+  "specificatiedocument": [
+    {
+      "naam": "Applicatieprofiel Slimme Raadpleegomgeving",
+      "waarde": "https://data.vlaanderen.be/doc/applicatieprofiel/slimme-raadpleegomgeving"
+    },
+    {
+      "naam": "Vocabularium Cultuurparticipatie",
+      "waarde": "https://data.vlaanderen.be/ns/slimme-raadpleegomgeving"
+    }
+  ],
+  "documentatie": [],
+  "charter": [
+    {
+      "naam": "Werkgroep Charter Slimme Raadpleegomgeving",
+      "waarde": "Werkgroep charter OSLO Slimme Raadpleegomgeving.docx"
+    }
+  ],
+  "verslagen": [
+    {
+      "naam": "Verslag Business Werkgroep - 17 oktober 2023",
+      "waarde": "Verslag Business Workshop Slimme Raadpleegomgeving.pdf"
+    }
+  ],
+  "presentaties": [
+    {
+      "naam": "Presentatie Business Werkgroep - 17 oktober 2023",
+      "waarde": "Business Werkgroep presentatie - slimme raadpleegomgeving.pdf"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep I - 7 november 2023",
+      "waarde": "20231107 Thematische Werkgroep 1 - Slimme Raadpleegomgeving V.01.pptx"
+    }
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor de digitale transformatie van de Vlaamse lokale besturen",
+  "organisatorisch_werkingsgebied": "lokale besturen, softwareleveranciers van notuleringspaketten en AI toepassingen, alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "7 november 2023",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD"
+}
