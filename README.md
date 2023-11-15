@@ -80,6 +80,8 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
 </div>
 ```
 
+### Mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
+
 ## Thema's
 
 ## LPDC-codes
