@@ -1,0 +1,6 @@
+all/all.ttl is the aggregated collection of all information in this directory.
+Each time a change happens to the individual codelists this file should be updated.
+The reason for this step is that is eases the configuration of data.vlaanderen.be and 
+makes its behaviour more predicatable.
+
+It is constructed as cat *.ttl > all/all.ttl

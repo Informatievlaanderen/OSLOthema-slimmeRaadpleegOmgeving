@@ -1,0 +1,24 @@
+<https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    <http://www.w3.org/2000/01/rdf-schema#Class>;
+  <http://www.w3.org/2004/02/skos/core#definition> "Cultuur en vrije tijd.";
+  <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Cultuur en vrije tijd." ;
+  <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+
+<https://data.vlaanderen.be/id/concept/BesluitThema/CultureleInstellingen> a <http://www.w3.org/2004/02/skos/core#Concept>,
+    <http://www.w3.org/2000/01/rdf-schema#Class>;
+  <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd>;
+  <http://www.w3.org/2004/02/skos/core#definition> "Culturele instellingen.";
+  <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema>;
+  <http://www.w3.org/2004/02/skos/core#prefLabel> "Culturele instellingen." .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1: <https://data.vlaanderen.be/id/conceptscheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix ns5: <http://mu.semte.ch/vocabularies/core/> .
+
+ns1:BesluitThema
+  rdf:type skos:ConceptScheme ;
+  ns4:modified "2023-11-15"^^xsd:date ;
+  skos:prefLabel "Besluit thema code" .

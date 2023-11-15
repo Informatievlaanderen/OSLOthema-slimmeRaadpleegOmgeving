@@ -1,0 +1,11 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1: <https://data.vlaanderen.be/id/conceptscheme/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns4: <http://purl.org/dc/terms/> .
+@prefix ns5: <http://mu.semte.ch/vocabularies/core/> .
+
+ns1:BesluitThema
+  rdf:type skos:ConceptScheme ;
+  ns4:modified "2023-11-15"^^xsd:date ;
+  skos:prefLabel "Besluit thema code" .
