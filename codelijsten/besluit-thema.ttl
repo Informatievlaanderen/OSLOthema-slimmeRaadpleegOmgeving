@@ -1,3 +1,8 @@
+<https://data.vlaanderen.be/id/conceptscheme/BesluitThema>
+    a skos:ConceptScheme ;
+    skos:prefLabel "conceptscheme besluitthema" ;
+    skos:definition "Codelijst voor thema's van besluiten." .
+
 <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> a <http://www.w3.org/2004/02/skos/core#Concept>,
     <http://www.w3.org/2000/01/rdf-schema#Class>;
   <http://www.w3.org/2004/02/skos/core#definition> "Cultuur en vrije tijd.";
