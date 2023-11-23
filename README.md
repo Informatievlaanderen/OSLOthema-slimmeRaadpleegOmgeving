@@ -7,7 +7,8 @@ De opzet van dit traject is om inhoudelijke annotaties toe te voegen aan de besl
 
 ## Locatie-gebaseerde informatie
 
-Het AP gebruikt de eigenschap [geografischeDekking](http://purl.org/dc/terms/spatial) om locaties te linken aan een besluit(onderdeel). Het bereik hiervan is het generieke Plaats dat een plaatsnaam en geometrie voorziet, maar kan ook ingevuld worden met specifieke vormen van plaatsen zoals een adres of gebouw.
+Het AP gebruikt de eigenschap [geografischeDekking](http://purl.org/dc/terms/spatial) om locaties te linken aan een besluit(onderdeel). Het bereik hiervan is het generieke [Locatie](http://www.w3.org/ns/prov#Location) dat geïmplementeerd kan worden met coördinaten, een plaats, een adres...
+Hieronder geven we een aantal voorbeelden van zo'n locaties.
 
 ### Een straatnaam
 
@@ -85,6 +86,18 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
 ## Thema's
 
 ## LPDC-codes
+
+Om te verwijzen naar een LPDC/IPDC-code wordt er verwezen naar een URI, zoals `https://ipdc.vlaanderen.be/id/instantie/27543`.
+
+Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het LPDC product (instantie van een conceptual public service).
+```
+<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+  <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
+    <span property="eli:title" datatype="xsd:string">Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein</span>
+    <span property="sro:bekrachtigt" resource="https://ipdc.vlaanderen.be/id/instantie/27543"></span>
+  </div>
+</div>
+```
 
 ## Gecoördineerde versies van reglementen
 
