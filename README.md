@@ -74,7 +74,23 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
     <div property="dcterms:spatial" typeof="locn:Location" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1">
       <span property="rdfs:label">evenementenweide van de Blaarmeersen aan de Duiklaan te Gent</span>.
       <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie">
-<span property="geosparql:asWKT" content="POLYGON((3.6865100765135135 51.048086068457195,3.6878730996977533 51.04793498036966,3.6877832771278913 51.04755864782376,3.6863662849646053 51.04784147386724,3.6865100765135135 51.048086068457195))" datatype="geosparql:wktLiteral"></span>
+<span property="geosparql:asWKT" content="POINT(3.6865100765135135 51.048086068457195)"" datatype="geosparql:wktLiteral"></span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Enkel coördinaten
+
+Om enkel coördinaten te linken met het besluit, dient nog altijd met Geometrie gewerkt te worden.
+
+```
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+  <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540">
+    <span property="eli:title" datatype="xsd:string">2023_CBS_08501 - 15748/M/1 - Geluidsuitzending - op donderdag 21 september 2023 (Gentsterpop)></span>
+      <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie">
+<span property="geosparql:asWKT" content="POINT(3.6865100765135135 51.048086068457195)"" datatype="geosparql:wktLiteral"></span>
       </div>
     </div>
   </div>
@@ -82,6 +98,12 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
 ```
 
 ## Thema's
+
+### Subthema's definiëren
+
+Hoofdthema's worden aangeboden via [deze codelijst](https://data.vlaanderen.be/doc/conceptscheme/BesluitThema).
+Bijvoorbeeld `https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd`
+Lokaal kunnen er specifiekere thema's gebruikt worden. Hierbij dient een relatie `skos:broader` of `skos:related` voorzien te worden naar een hoofdthema.
 
 ## LPDC-codes
 
@@ -98,6 +120,15 @@ Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het 
 ```
 
 ## Gecoördineerde versies van reglementen
+
+Indien gecoördineerd reglement als bijlage wordt toegevoegd bij besluit:
+https://lblod.github.io/pages-vendors/#/docs/decision-attachments
+
+Legale Verschijningsvorm (type gecoördineerd reglement) - dct:isPartOf -> (Wijzigings)besluit
+(Wijzigings)besluit - eli:related_to & eli:consolidates (zelfde als coordineert?) -> Legale Verschijningsvorm (met type gecoördineerd reglement)
+
+Indien gecoördineerd reglement achteraf wordt gepubliceerd:
+Legale Verschijningsvorm (type gecoördineerd reglement) - eli:consolidated_by -> (Wijzigings)besluit
 
 
 ## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
