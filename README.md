@@ -81,8 +81,6 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
 </div>
 ```
 
-### Mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
-
 ## Thema's
 
 ## LPDC-codes
@@ -101,6 +99,10 @@ Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het 
 
 ## Gecoördineerde versies van reglementen
 
+
+## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
+
+Idee: met GeoSPARQL kunnen besluiten in een bepaalde polygoon bevraagd worden 
 
 ## Administrative information
 
