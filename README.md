@@ -181,11 +181,67 @@ classDiagram
 
 ## Thema's
 
-### Subthema's definiëren
+### Linken aan een thema
 
 Hoofdthema's worden aangeboden via [deze codelijst](https://data.vlaanderen.be/doc/conceptscheme/BesluitThema).
 Bijvoorbeeld `https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd`
-Lokaal kunnen er specifiekere thema's gebruikt worden. Hierbij dient een relatie `skos:broader` of `skos:related` voorzien te worden naar een hoofdthema.
+
+De relatie `eli:is_about` wordt gebruikt om de link tussen het besluit en het thema te maken:
+```
+<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+  <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
+    <span property="eli:title" datatype="xsd:string">Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein</span>
+    <span property="eli:is_about" resource="https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"></span>
+  </div>
+</div>
+```
+```mermaid
+classDiagram
+    2023_CBS_1234 --> thema: eli-is_about
+    note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
+    note for thema "URI: https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"
+    class 2023_CBS_1234 {
+      a besluit:Besluit
+      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+    }
+    class thema {
+    }
+```
+
+
+### Subthema's definiëren
+
+Lokaal kunnen er specifiekere thema's gebruikt worden. Hierbij dient een relatie `skos:broader` of `skos:related` voorzien te worden naar een hoofdthema uit de codelijst van hierboven.
+
+```
+<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#" skos: http://www.w3.org/2004/02/skos/core#> 
+  <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
+    <span property="eli:title" datatype="xsd:string">Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein</span>
+    <div property="eli:is_about" resource="https://data.aalter.be/id/concept/besluitthema/terrasvergunning" typeof="skos:Concept">
+      <span property="skos:prefLabel" content="Terrasverguning (thema)"></span>
+      <span property="skos:definition" content="Dit thema gaat over terrasvergunningen - inname openbaar domein"></span>
+      span property="skos:broader skos:related" resource="https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"></span>
+    </div>
+  </div>
+</div>
+```
+```mermaid
+classDiagram
+    2023_CBS_1234 --> terrasvergunning_thema: eli-is_about
+    terrasvergunning_thema --> hoofdthema: skos-broader
+    note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
+    note for terrasvergunning_thema "URI: https://data.aalter.be/id/concept/besluitthema/terrasvergunning"
+    note for hoofdthema "URI: https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"
+    class 2023_CBS_1234 {
+      a besluit:Besluit
+      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+    }
+    class terrasvergunning_thema {
+      a skos:Concept
+      skos:prefLabel "Terrasverguning (thema)"
+      skos:definition "Dit thema gaat over terrasvergunningen - inname openbaar domein"
+    }
+```
 
 ## LPDC-codes
 
