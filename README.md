@@ -278,10 +278,12 @@ We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.
 ):
 
 * de behandeling van agendapunt wordt gelinkt met `prov:generated` met 2 besluiten: het wijzigingsbesluit + gecoördineerde reglement
-* Het gecoördineerde reglement krijgt een type document
+* Naast het linken van de 2 besluiten met `eli:related` en `dcterms:isPartOf`, wordt ook `eli:consolidates` en `eli:consolidated_by` gebruikt
+* Het gecoördineerde reglement krijgt een type `gecoördineerd reglement` (work in progress om dit toe te voegen) 
 
 ```
 <div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+  <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
     <span property="eli:title" datatype="xsd:string">2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs</span>
     <span property="eli:related eli:consolidates" rev="dcterms:isPartOf eli:consolidated_by" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B" typeof="besluit:Besluit"></span>
@@ -290,21 +292,33 @@ We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.
       <span property="eli:type_document" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/TODO"></span>
       <span property="eli:title" datatype="xsd:string" content="Het gewijzigde arbeidsreglement voor de Academie voor muziek, woord en dans"></span>
   </div>
-      
     </div>
+</div>
 </div>
 ```
 
 ```mermaid
 classDiagram
-    2023_CBS_1234 --> lpdc_27543: sro-bekrachtigt
-    note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
-    note for lpdc_27543 "URI: https://ipdc.vlaanderen.be/id/instantie/27543"
-    class 2023_CBS_1234 {
-      a besluit:Besluit
-      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+    BehandelingVanAgendapunt --> Wijzigingsbesluit: prov-generated
+    BehandelingVanAgendapunt --> GecoördineerdReglement: prov-generated
+    Wijzigingsbesluit --> GecoördineerdReglement: eli-related
+    Wijzigingsbesluit --> GecoördineerdReglement: eli-consolidates
+    GecoördineerdReglement --> Wijzigingsbesluit: dcterms-isPartOf
+    GecoördineerdReglement --> Wijzigingsbesluit: eli-consolidated-by
+
+    note for BehandelingVanAgendapunt "URI: https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954"
+    note for Wijzigingsbesluit "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
+    note for GecoördineerdReglement "URI: https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B"
+
+    class BehandelingVanAgendapunt {
+      a besluit:BehandelingVanAgendapunt
     }
-    class lpdc_27543 {
+    class Wijzigingsbesluit {
+      a besluit:Besluit
+      eli:title "2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs"
+    }
+    class GecoördineerdReglement {
+      eli:type_document "https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"
     }
 ```
 
