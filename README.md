@@ -185,6 +185,7 @@ classDiagram
 
 Hoofdthema's worden aangeboden via [deze codelijst](https://data.vlaanderen.be/doc/conceptscheme/BesluitThema).
 Bijvoorbeeld `https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd`
+De bedoeling is dat deze hoofdthema's gekoppeld worden met diverse rapporteringen zoals BBC en stadsmonitor.
 
 De relatie `eli:is_about` wordt gebruikt om de link tussen het besluit en het thema te maken:
 ```
@@ -323,6 +324,15 @@ classDiagram
 ## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
 
 Idee: met GeoSPARQL kunnen besluiten in een bepaalde polygoon bevraagd worden 
+
+## Zoeken adhv woorden in besluiten
+
+Dit is een functionaliteit dat ingebouwd moet worden in raadpleegomgevingen en staat los van het model.
+Bijvoorbeeld bij: [Green Valley](https://raadpleeg-aalter.onlinesmartcities.be/zoeken?query=pakjesautomaat&organId=&meetingDateStart=&meetingDateEnd=&typeId=&title=&page=0&pageSize=10) en [Lokaal Beslist](https://lokaalbeslist.lblod.info/agendapunten?gemeentes=Aalter&trefwoord=pakjesautomaat).
+
+## Drones boven mijn gemeente. Is dit toegestaan?
+
+Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten, locaties) wordt er gekeken naar de FLINT ontology en OSLO-Steps. Dit is nog volop in onderzoek.
 
 ## Administrative information
 
