@@ -58,16 +58,16 @@ Bij adressen wordt gebruik gemaakt van [Adresvoorstellingen](https://data.vlaand
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> Molenstraat_1_voorstelling: dcterms-spatial
-    Molenstraat_1_voorstelling --> Molenstraat_1_adressenregister: adres-verwijstNaar
+    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: dcterms-spatial
+    Molenstraat_1_adresvoorstelling --> Molenstraat_1_adressenregister: adres-verwijstNaar
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
-    note for Molenstraat_1_voorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1"
+    note for Molenstraat_1_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1"
     note for Molenstraat_1_adressenregister "URI: https://data.vlaanderen.be/id/adres/3794238"
     class 2023_CBS_08639 {
       a besluit:Besluit
       eli:title "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
     }
-    class Molenstraat_1_voorstelling {
+    class Molenstraat_1_adresvoorstelling {
       a locn:Address
       adres:Adresvoorstelling.huisnummer 1
       adres:gemeentenaam Gent
@@ -95,6 +95,18 @@ tem
     , 9032 Gent - Vergunning</span>
 </div>
 </div>
+```
+
+```mermaid
+classDiagram
+    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: dcterms-spatial
+    2023_CBS_08639 --> Molenstraat_2_adresvoorstelling: dcterms-spatial
+    2023_CBS_08639 --> Molenstraat_3_adresvoorstelling: dcterms-spatial
+
+    note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
+    note for Molenstraat_1_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1"
+    note for Molenstraat_2_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/2"
+    note for Molenstraat_3_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/3"
 ```
 
 ### Een plaats met naam en geometrie
