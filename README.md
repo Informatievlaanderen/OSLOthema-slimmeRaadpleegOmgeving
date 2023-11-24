@@ -119,12 +119,33 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
     <span property="eli:title" datatype="xsd:string">2023_CBS_08501 - 15748/M/1 - Geluidsuitzending - op donderdag 21 september 2023 (Gentsterpop) op de
     <div property="dcterms:spatial" typeof="locn:Location" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1">
       <span property="rdfs:label">evenementenweide van de Blaarmeersen aan de Duiklaan te Gent</span>.
-      <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie">
+      <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie/1">
 <span property="geosparql:asWKT" content="POINT(3.6865100765135135 51.048086068457195)"" datatype="geosparql:wktLiteral"></span>
       </div>
     </div>
   </div>
 </div>
+```
+
+```mermaid
+classDiagram
+    2023_CBS_08639 --> evenementenweide: dcterms-spatial
+    evenementenweide --> evenementenweide_geometrie: locn-geometry
+    note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
+    note for evenementenweide "URI: https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1"
+    note for evenementenweide_geometrie "URI: https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie/1"
+    class 2023_CBS_08639 {
+      a besluit:Besluit
+      eli:title "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
+    }
+    class evenementenweide {
+      a locn:Location
+      rdfs:label "evenementenweide van de Blaarmeersen aan de Duiklaan te Gent"
+    }
+    class evenementenweide_geometrie {
+      a locn:Geometry
+      geosparql:asWKT "POINT(3.6865100765135135 51.048086068457195)"
+    }
 ```
 
 ### Enkel coördinaten
