@@ -272,13 +272,45 @@ classDiagram
 
 ## Gecoördineerde versies van reglementen
 
-Indien gecoördineerd reglement als bijlage wordt toegevoegd bij besluit:
-https://lblod.github.io/pages-vendors/#/docs/decision-attachments
-`Legale Verschijningsvorm (type gecoördineerd reglement) - dct:isPartOf -> (Wijzigings)besluit`
-`(Wijzigings)besluit - eli:related_to & eli:consolidates (zelfde als coordineert?) -> Legale Verschijningsvorm (met type gecoördineerd reglement)`
+### Indien gecoördineerd reglement als bijlage wordt toegevoegd bij besluit:
+
+We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.io/pages-vendors/#/docs/decision-attachments
+):
+
+* de behandeling van agendapunt wordt gelinkt met `prov:generated` met 2 besluiten: het wijzigingsbesluit + gecoördineerde reglement
+* Het gecoördineerde reglement krijgt een type document
+
+```
+<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+  <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
+    <span property="eli:title" datatype="xsd:string">2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs</span>
+    <span property="eli:related eli:consolidates" rev="dcterms:isPartOf eli:consolidated_by" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B" typeof="besluit:Besluit"></span>
+  </div>
+  <div property="prov:generated" typeof="besluit:Besluit" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B">
+      <span property="eli:type_document" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/TODO"></span>
+      <span property="eli:title" datatype="xsd:string" content="Het gewijzigde arbeidsreglement voor de Academie voor muziek, woord en dans"></span>
+  </div>
+      
+    </div>
+</div>
+```
+
+```mermaid
+classDiagram
+    2023_CBS_1234 --> lpdc_27543: sro-bekrachtigt
+    note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
+    note for lpdc_27543 "URI: https://ipdc.vlaanderen.be/id/instantie/27543"
+    class 2023_CBS_1234 {
+      a besluit:Besluit
+      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+    }
+    class lpdc_27543 {
+    }
+```
 
 Indien gecoördineerd reglement achteraf wordt gepubliceerd:
 `Legale Verschijningsvorm (type gecoördineerd reglement) - eli:consolidated_by -> (Wijzigings)besluit`
+
 
 
 ## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
