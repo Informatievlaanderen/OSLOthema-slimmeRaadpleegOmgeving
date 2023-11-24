@@ -220,7 +220,7 @@ Lokaal kunnen er specifiekere thema's gebruikt worden. Hierbij dient een relatie
     <div property="eli:is_about" resource="https://data.aalter.be/id/concept/besluitthema/terrasvergunning" typeof="skos:Concept">
       <span property="skos:prefLabel" content="Terrasverguning (thema)"></span>
       <span property="skos:definition" content="Dit thema gaat over terrasvergunningen - inname openbaar domein"></span>
-      span property="skos:broader skos:related" resource="https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"></span>
+      <span property="skos:broader skos:related" resource="https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"></span>
     </div>
   </div>
 </div>
@@ -255,6 +255,19 @@ Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het 
     <span property="sro:bekrachtigt" resource="https://ipdc.vlaanderen.be/id/instantie/27543"></span>
   </div>
 </div>
+```
+
+```mermaid
+classDiagram
+    2023_CBS_1234 --> lpdc_27543: sro-bekrachtigt
+    note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
+    note for lpdc_27543 "URI: https://ipdc.vlaanderen.be/id/instantie/27543"
+    class 2023_CBS_1234 {
+      a besluit:Besluit
+      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+    }
+    class lpdc_27543 {
+    }
 ```
 
 ## Gecoördineerde versies van reglementen
