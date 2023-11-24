@@ -275,11 +275,11 @@ classDiagram
 ### Indien gecoördineerd reglement als bijlage wordt toegevoegd bij besluit:
 
 We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.io/pages-vendors/#/docs/decision-attachments
-):
+), mits uitbreiding:
 
 * de behandeling van agendapunt wordt gelinkt met `prov:generated` met 2 besluiten: het wijzigingsbesluit + gecoördineerde reglement
-* Naast het linken van de 2 besluiten met `eli:related` en `dcterms:isPartOf`, wordt ook `eli:consolidates` en `eli:consolidated_by` gebruikt
-* Het gecoördineerde reglement krijgt een type `gecoördineerd reglement` (work in progress om dit toe te voegen) 
+* Het gecoördineerde reglement krijgt een type `gecoördineerd reglement` (work in progress om dit toe te voegen)
+* Uitbreiding: naast het linken van de 2 besluiten met `eli:related` en `dcterms:isPartOf`, wordt ook `eli:consolidates` en `eli:consolidated_by` gebruikt
 
 ```
 <div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
@@ -322,7 +322,9 @@ classDiagram
     }
 ```
 
-Indien gecoördineerd reglement achteraf wordt gepubliceerd:
+### Indien gecoördineerd reglement achteraf wordt gepubliceerd:
+
+
 `Legale Verschijningsvorm (type gecoördineerd reglement) - eli:consolidated_by -> (Wijzigings)besluit`
 
 
