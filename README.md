@@ -270,9 +270,7 @@ classDiagram
     }
 ```
 
-## Gecoördineerde versies van reglementen
-
-### Indien gecoördineerd reglement als bijlage wordt toegevoegd bij besluit:
+## Gecoördineerde versies van reglementen als bijlage van een besluit
 
 We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.io/pages-vendors/#/docs/decision-attachments
 ), mits uitbreiding:
@@ -321,13 +319,6 @@ classDiagram
       eli:type_document "https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"
     }
 ```
-
-### Indien gecoördineerd reglement achteraf wordt gepubliceerd:
-
-
-`Legale Verschijningsvorm (type gecoördineerd reglement) - eli:consolidated_by -> (Wijzigings)besluit`
-
-
 
 ## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
 
