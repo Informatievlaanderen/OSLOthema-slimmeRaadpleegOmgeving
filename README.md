@@ -339,6 +339,19 @@ Bijvoorbeeld bij: [Green Valley](https://raadpleeg-aalter.onlinesmartcities.be/z
 
 Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten, locaties) wordt er gekeken naar de FLINT ontology en OSLO-Steps. Dit is nog volop in onderzoek.
 
+## Initiatiefrecht
+
+```mermaid
+classDiagram
+    Zitting --> InitiatiefrechtVraag: behandelt (eli-dl_consists-of)
+    LegaleActiviteit <|-- Zitting
+    LegaleActiviteit <|-- InitiatiefrechtVraag
+    InitiatiefrechtVraag <|-- Verzoekschrift
+    InitiatiefrechtVraag <|-- Voorstel
+    InitiatiefrechtVraag <|-- Interpellatie
+
+```
+
 ## Administrative information
 
 **_Editors:_**
