@@ -354,6 +354,12 @@ classDiagram
     BehandelingVanAgendapunt --> Mandataris: heeftIndiener
     BehandelingVanAgendapunt --> Mandataris: heeftOntvanger
 
+    class Agendapunt {
+      +titel: String
+      +beschrijving: String
+      +geplandOpenbaar: boolean
+      type: Code
+    }
     class InitiatiefrechtVraag {
       +indieningsdatum: Datum
       +motivering: String
