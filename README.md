@@ -251,10 +251,12 @@ Om te verwijzen naar een LPDC/IPDC-code wordt er verwezen naar een URI, zoals `h
 
 Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het LPDC product (instantie van een conceptual public service).
 ```
-<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+<div prefix="ipdc-lpdc: https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
     <span property="eli:title" datatype="xsd:string">Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein</span>
-    <span property="sro:bekrachtigt" resource="https://ipdc.vlaanderen.be/id/instantie/27543"></span>
+    <div property="sro:bekrachtigt" resource="https://ipdc.vlaanderen.be/id/instantie/27543" typeof="ipdc-lpdc:InstancePublicService">
+      <span property="dcterms:source" resource="https://ipdc.vlaanderen.be/id/concept/1234"></span>
+    </div>
   </div>
 </div>
 ```
@@ -262,8 +264,10 @@ Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het 
 ```mermaid
 classDiagram
     2023_CBS_1234 --> lpdc_27543: bekrachtigt (sro-bekrachtigt)
+    lpdc_27543 --> ipdc_1234: heeftBron (dcterms-source)
     note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
     note for lpdc_27543 "URI: https://ipdc.vlaanderen.be/id/instantie/27543"
+    note for ipdc_1234 "URI: https://ipdc.vlaanderen.be/id/concept/1234"
     class 2023_CBS_1234 {
       a Besluit (besluit:Besluit)
       titel (eli:title) "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
