@@ -23,12 +23,12 @@ Bijvoorbeeld, een straatnaam kan als volgt gelinkt worden:
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> Molenstraat: dcterms-spatial
+    2023_CBS_08639 --> Molenstraat: geografischeDekking (dcterms-spatial)
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for Molenstraat "URI: https://data.vlaanderen.be/id/straatnaam/71082"
     class 2023_CBS_08639 {
-      a besluit:Besluit
-      eli:title "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
     }
     class Molenstraat {
     }
@@ -58,21 +58,21 @@ Bij adressen wordt gebruik gemaakt van [Adresvoorstellingen](https://data.vlaand
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: dcterms-spatial
-    Molenstraat_1_adresvoorstelling --> Molenstraat_1_adressenregister: adres-verwijstNaar
+    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: geografischeDekking (dcterms-spatial)
+    Molenstraat_1_adresvoorstelling --> Molenstraat_1_adressenregister: verwijstNaar (adres-verwijstNaar)
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for Molenstraat_1_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1"
     note for Molenstraat_1_adressenregister "URI: https://data.vlaanderen.be/id/adres/3794238"
     class 2023_CBS_08639 {
-      a besluit:Besluit
-      eli:title "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
     }
     class Molenstraat_1_adresvoorstelling {
-      a locn:Address
-      adres:Adresvoorstelling.huisnummer 1
-      adres:gemeentenaam Gent
-      locn:postcode 9000
-      locn:thoroughfare Molenstraat
+      a Adresvoorstelling (locn:Address)
+      huisnummer (adres:Adresvoorstelling.huisnummer) 1
+      gemeentenaam (adres:gemeentenaam) Gent
+      postcode (locn:postcode) 9000
+      volledigAdres (locn:thoroughfare) Molenstraat
     }
 ```
 
@@ -99,9 +99,9 @@ tem
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: dcterms-spatial
-    2023_CBS_08639 --> Molenstraat_2_adresvoorstelling: dcterms-spatial
-    2023_CBS_08639 --> Molenstraat_3_adresvoorstelling: dcterms-spatial
+    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: geografischeDekking (dcterms-spatial)
+    2023_CBS_08639 --> Molenstraat_2_adresvoorstelling: geografischeDekking (dcterms-spatial)
+    2023_CBS_08639 --> Molenstraat_3_adresvoorstelling: geografischeDekking (dcterms-spatial)
 
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for Molenstraat_1_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1"
@@ -129,22 +129,22 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> evenementenweide: dcterms-spatial
-    evenementenweide --> evenementenweide_geometrie: locn-geometry
+    2023_CBS_08639 --> evenementenweide: geografischeDekking (dcterms-spatial)
+    evenementenweide --> evenementenweide_geometrie: geometrie (locn-geometry)
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for evenementenweide "URI: https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1"
     note for evenementenweide_geometrie "URI: https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie/1"
     class 2023_CBS_08639 {
-      a besluit:Besluit
-      eli:title "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
     }
     class evenementenweide {
-      a locn:Location
-      rdfs:label "evenementenweide van de Blaarmeersen aan de Duiklaan te Gent"
+      a Plaats (locn:Location)
+      plaatsnaam (rdfs:label) "evenementenweide van de Blaarmeersen aan de Duiklaan te Gent"
     }
     class evenementenweide_geometrie {
-      a locn:Geometry
-      geosparql:asWKT "POINT(3.6865100765135135 51.048086068457195)"
+      a Geometrie (locn:Geometry)
+      wkt (geosparql:asWKT) "POINT(3.6865100765135135 51.048086068457195)"
     }
 ```
 
@@ -167,16 +167,16 @@ Bijvoorbeeld: plaatsing van tijdelijke sluikstortcamera aan landweg.
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> evenementenweide_geometrie: locn-geometry
-    note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
+    2023_CBS_1234 --> evenementenweide_geometrie: geometrie (locn-geometry)
+    note for 2023_CBS_1234 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for evenementenweide_geometrie "URI: https://data.gent.be/id/besluiten/23.0829.9225.8540/geometrie/1"
     class 2023_CBS_1234 {
-      a besluit:Besluit
-      eli:title "2023_CBS_1234 plaatsing van tijdelijke sluikstortcamera aan landweg"
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_1234 plaatsing van tijdelijke sluikstortcamera aan landweg"
     }
     class evenementenweide_geometrie {
-      a locn:Geometry
-      geosparql:asWKT "POINT(3.6865100765135135 51.048086068457195)"
+      a Geometrie (locn:Geometry)
+      wkt (geosparql:asWKT) "POINT(3.6865100765135135 51.048086068457195)"
     }
 ```
 
@@ -199,12 +199,12 @@ De relatie `eli:is_about` wordt gebruikt om de link tussen het besluit en het th
 ```
 ```mermaid
 classDiagram
-    2023_CBS_1234 --> thema: eli-is_about
+    2023_CBS_1234 --> thema: onderwerp (eli-is_about)
     note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
     note for thema "URI: https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"
     class 2023_CBS_1234 {
-      a besluit:Besluit
-      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
     }
     class thema {
     }
@@ -229,19 +229,19 @@ Lokaal kunnen er specifiekere thema's gebruikt worden. Hierbij dient een relatie
 ```
 ```mermaid
 classDiagram
-    2023_CBS_1234 --> terrasvergunning_thema: eli-is_about
-    terrasvergunning_thema --> hoofdthema: skos-broader
+    2023_CBS_1234 --> terrasvergunning_thema: onderwerp (eli-is_about)
+    terrasvergunning_thema --> hoofdthema: breder (skos-broader)
     note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
     note for terrasvergunning_thema "URI: https://data.aalter.be/id/concept/besluitthema/terrasvergunning"
     note for hoofdthema "URI: https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"
     class 2023_CBS_1234 {
-      a besluit:Besluit
-      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
     }
     class terrasvergunning_thema {
-      a skos:Concept
-      skos:prefLabel "Terrasverguning (thema)"
-      skos:definition "Dit thema gaat over terrasvergunningen - inname openbaar domein"
+      a Themacode (skos:Concept)
+      voorkeursnaam (skos:prefLabel) "Terrasverguning (thema)"
+      definitie (skos:definition) "Dit thema gaat over terrasvergunningen - inname openbaar domein"
     }
 ```
 
@@ -261,12 +261,12 @@ Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het 
 
 ```mermaid
 classDiagram
-    2023_CBS_1234 --> lpdc_27543: sro-bekrachtigt
+    2023_CBS_1234 --> lpdc_27543: bekrachtigt (sro-bekrachtigt)
     note for 2023_CBS_1234 "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
     note for lpdc_27543 "URI: https://ipdc.vlaanderen.be/id/instantie/27543"
     class 2023_CBS_1234 {
-      a besluit:Besluit
-      eli:title "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein"
     }
     class lpdc_27543 {
     }
@@ -299,26 +299,26 @@ We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.
 
 ```mermaid
 classDiagram
-    BehandelingVanAgendapunt --> Wijzigingsbesluit: prov-generated
-    BehandelingVanAgendapunt --> GecoördineerdReglement: prov-generated
-    Wijzigingsbesluit --> GecoördineerdReglement: eli-related
-    Wijzigingsbesluit --> GecoördineerdReglement: eli-consolidates
-    GecoördineerdReglement --> Wijzigingsbesluit: dcterms-isPartOf
-    GecoördineerdReglement --> Wijzigingsbesluit: eli-consolidated-by
+    BehandelingVanAgendapunt --> Wijzigingsbesluit: geeftAanleidingTot (prov-generated)
+    BehandelingVanAgendapunt --> GecoördineerdReglement: geeftAanleidingTot (prov-generated)
+    Wijzigingsbesluit --> GecoördineerdReglement: gerelateerdAan (eli-related)
+    Wijzigingsbesluit --> GecoördineerdReglement: consolideert (eli-consolidates)
+    GecoördineerdReglement --> Wijzigingsbesluit: isDeelVan (dcterms-isPartOf)
+    GecoördineerdReglement --> Wijzigingsbesluit: isGeconsolideerdDoor (eli-consolidated-by)
 
     note for BehandelingVanAgendapunt "URI: https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954"
     note for Wijzigingsbesluit "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
     note for GecoördineerdReglement "URI: https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B"
 
     class BehandelingVanAgendapunt {
-      a besluit:BehandelingVanAgendapunt
+      a BehandelingVanAgendapunt (besluit:BehandelingVanAgendapunt)
     }
     class Wijzigingsbesluit {
-      a besluit:Besluit
-      eli:title "2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs"
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs"
     }
     class GecoördineerdReglement {
-      eli:type_document "https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"
+      documentType (eli:type_document) "https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"
     }
 ```
 
