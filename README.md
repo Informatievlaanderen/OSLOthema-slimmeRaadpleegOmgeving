@@ -343,13 +343,33 @@ Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten,
 
 ```mermaid
 classDiagram
-    Zitting --> InitiatiefrechtVraag: behandelt (eli-dl_consists-of)
-    LegaleActiviteit <|-- Zitting
-    LegaleActiviteit <|-- InitiatiefrechtVraag
+    Agendapunt <|-- InitiatiefrechtVraag 
+    BehandelingVanAgendapunt --> InitiatiefrechtVraag: behandelt (eli-dl_consists-of)
     InitiatiefrechtVraag <|-- Verzoekschrift
     InitiatiefrechtVraag <|-- Voorstel
     InitiatiefrechtVraag <|-- Interpellatie
 
+    Voorstel --> Besluit: heeftOntwerpbesluit
+    BehandelingVanAgendapunt --> Participatie: heeftParticipatie (eli-dl_had_participation)
+    BehandelingVanAgendapunt --> Mandataris: heeftIndiener
+    BehandelingVanAgendapunt --> Mandataris: heeftOntvanger
+
+    class InitiatiefrechtVraag {
+      +indieningsdatum: Datum
+      +motivering: String
+    }
+    class Participatie {
+      +heeft_participant_persoon: Persoon
+      +heeft_participant_organisatie: Organisatie
+      +rol: Rol (indiener, ontvanger)
+      +heeft_verantwoordelijke_persoon: Persoon
+     +heeft_verantwoordelijke_organisatie: Organisatie
+    }
+
+    class Interpellatie {
+      +type: Code
+    }
+  
 ```
 
 ## Administrative information
