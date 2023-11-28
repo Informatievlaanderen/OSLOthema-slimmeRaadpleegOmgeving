@@ -343,16 +343,19 @@ Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten,
 
 ```mermaid
 classDiagram
-    Agendapunt <|-- InitiatiefrechtVraag 
+    Agendapunt <-- BehandelingVanAgendapunt: heeftOnderwerp
+    LegaleActiviteit <|-- InitiatiefrechtVraag
+    LegaleActiviteit <|-- InitiatiefrechtAntwoord
+    InitiatiefrechtAntwoord --> InitiatiefrechtVraag : isGemotiveerdDoor (eli-dl_was_motivated_by)
     BehandelingVanAgendapunt --> InitiatiefrechtVraag: behandelt (eli-dl_consists-of)
     InitiatiefrechtVraag <|-- Verzoekschrift
     InitiatiefrechtVraag <|-- Voorstel
     InitiatiefrechtVraag <|-- Interpellatie
 
-    Voorstel --> Besluit: heeftOntwerpbesluit
+    Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
     BehandelingVanAgendapunt --> Participatie: heeftParticipatie (eli-dl_had_participation)
-    BehandelingVanAgendapunt --> Mandataris: heeftIndiener
-    BehandelingVanAgendapunt --> Mandataris: heeftOntvanger
+
+    BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
 
     class Agendapunt {
       +titel: String
