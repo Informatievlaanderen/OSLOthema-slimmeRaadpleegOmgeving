@@ -285,6 +285,10 @@ We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.
 * Het gecoördineerde reglement krijgt een type `gecoördineerd reglement` (work in progress om dit toe te voegen)
 * Uitbreiding: naast het linken van de 2 besluiten met `eli:related` en `dcterms:isPartOf`, wordt ook `eli:consolidates` en `eli:consolidated_by` gebruikt
 
+Nota:
+* het reglement zou een rechtsgrond URI moeten hebben dat niet veranderd over de tijd en gebruikt kan worden om alle versies te bundelen
+* telkens een nieuwe versie van het gecoördineerde reglement gemaakt wordt, dient een nieuwe URI (URL) aangemaakt te worden voor de specifieke versie
+
 ```
 <div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
   <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
@@ -293,8 +297,11 @@ We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.
     <span property="eli:related eli:consolidates" rev="dcterms:isPartOf eli:consolidated_by" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B" typeof="besluit:Besluit"></span>
   </div>
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B">
-      <span property="eli:type_document" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/TODO"></span>
+      <span property="rdf:type" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"></span>
       <span property="eli:title" datatype="xsd:string" content="Het gewijzigde arbeidsreglement voor de Academie voor muziek, woord en dans"></span>
+      <div property="eli:realizes" content="https://data.aalter.be/id/rechtsgrond/12.1234.1234.1234" typeof="eli:LegalResource">
+        <span property="eli:type_document" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/Arbeidsreglement"></span>
+      </div>
   </div>
     </div>
 </div>
@@ -310,10 +317,14 @@ classDiagram
     GecoördineerdReglement --> Wijzigingsbesluit: isDeelVan (dcterms-isPartOf)
     GecoördineerdReglement --> Wijzigingsbesluit: isGeconsolideerdDoor (eli-consolidated-by)
 
+    GecoördineerdReglement --> ArbeidsreglementRechtsgrond: realiseert
+    class ArbeidsreglementRechtsgrond {
+      documentType (eli:type_document) "https://data.vlaanderen.be/id/concept/BesluitDocumentType/Arbeidsreglement"
+    }
     note for BehandelingVanAgendapunt "URI: https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954"
     note for Wijzigingsbesluit "URI: https://data.aalter.be/id/besluiten/23.1010.7267.2954"
     note for GecoördineerdReglement "URI: https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B"
-
+    note for ArbeidsreglementRechtsgrond "URI: https://data.aalter.be/id/rechtsgrond/12.1234.1234.1234"
     class BehandelingVanAgendapunt {
       a BehandelingVanAgendapunt (besluit:BehandelingVanAgendapunt)
     }
@@ -322,7 +333,7 @@ classDiagram
       titel (eli:title) "2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs"
     }
     class GecoördineerdReglement {
-      documentType (eli:type_document) "https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"
+      type (rdf:type) "https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"
     }
 ```
 
