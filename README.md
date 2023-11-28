@@ -354,8 +354,10 @@ classDiagram
 
     Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
     BehandelingVanAgendapunt --> Participatie: heeftParticipatie (eli-dl_had_participation)
-
     BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
+    BehandelingVanAgendapunt --> Besluit: geeftAanleidingTot
+    Werk <|-- Besluit
+    Werk <|-- OntwerpLegaleVerschijningsvorm
 
     class Agendapunt {
       +titel: String
