@@ -180,6 +180,9 @@ classDiagram
     }
 ```
 
+### Kadastrale gegevens
+
+
 ## Thema's
 
 ### Linken aan een thema
