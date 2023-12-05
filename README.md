@@ -370,10 +370,10 @@ classDiagram
     LegaleExpressie --> Werk: realiseert (eli:realizes)
  
     Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
-    BehandelingVanAgendapunt --> Participatie: heeftParticipatie (eli-dl_had_participation)
+    LegaleActiviteit --> Participatie: heeftParticipatie (eli-dl_had_participation)
     BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
     BehandelingVanAgendapunt --> Besluit: geeftAanleidingTot
-    Werk <|-- Besluit
+    Stuk <|-- Besluit
     Werk <|-- OntwerpLegaleVerschijningsvorm
 
     class Agendapunt {
@@ -424,7 +424,7 @@ Spoorwegbosje alsnog te realiseren voordat NMBS een private verkoop zou laten do
 Zal het stadsbestuur contact opnemen met de bevoegde federale minister(s) om de verwerving van
 het Spoorwegbosje te realiseren via onteigening?</span>
       <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie">
-        <span property="eli-dl:had_participant_person" resource=""></span>
+        <span property="eli-dl:had_participant_person" resource="http://data.lblod.info/id/mandatarissen/5C389E2E57753A000A00031B"></span>
         <span property="eli-dl:participant_person_label">De Meester Tom (PVDA)</span>
       </div>
       <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie">
