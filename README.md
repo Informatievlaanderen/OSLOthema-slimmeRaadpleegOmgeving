@@ -374,7 +374,7 @@ classDiagram
     BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
     BehandelingVanAgendapunt --> Besluit: geeftAanleidingTot
     Stuk <|-- Besluit
-    Werk <|-- OntwerpLegaleVerschijningsvorm
+    Stuk <|-- OntwerpLegaleVerschijningsvorm
 
     class Agendapunt {
       +titel: String
