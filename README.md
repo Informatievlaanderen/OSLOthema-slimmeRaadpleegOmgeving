@@ -368,13 +368,14 @@ classDiagram
 
     LegaleActiviteit --> Werk: opgenomenInRealisatieVan (eli-dl-recorded_in_realization_of)
     LegaleExpressie --> Werk: realiseert (eli-realizes)
- 
+    
     Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
     LegaleActiviteit --> Participatie: heeftParticipatie (eli-dl-had_participation)
     BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
     BehandelingVanAgendapunt --> Besluit: geeftAanleidingTot
-    Stuk <|-- Besluit
-    Stuk <|-- OntwerpLegaleVerschijningsvorm
+    Stuk <|-- LegaleExpressie
+    LegaleExpressie <|-- Besluit 
+    LegaleExpressie <|-- OntwerpLegaleVerschijningsvorm
 
     class Agendapunt {
       +titel: String
