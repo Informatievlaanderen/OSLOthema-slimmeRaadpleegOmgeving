@@ -360,17 +360,17 @@ classDiagram
     Agendapunt <-- BehandelingVanAgendapunt: heeftOnderwerp
     LegaleActiviteit <|-- InitiatiefrechtVraag
     LegaleActiviteit <|-- InitiatiefrechtAntwoord
-    InitiatiefrechtAntwoord --> InitiatiefrechtVraag : isGemotiveerdDoor (eli-dl_was_motivated_by)
-    BehandelingVanAgendapunt --> InitiatiefrechtVraag: bestaatUit (eli-dl_consists-of)
+    InitiatiefrechtAntwoord --> InitiatiefrechtVraag : isGemotiveerdDoor (eli-dl-was_motivated_by)
+    BehandelingVanAgendapunt --> InitiatiefrechtVraag: bestaatUit (eli-dl-consists-of)
     InitiatiefrechtVraag <|-- Verzoekschrift
     InitiatiefrechtVraag <|-- Voorstel
     InitiatiefrechtVraag <|-- Interpellatie
 
-    LegaleActiviteit --> Werk: opgenomenInRealisatieVan (eli-dl:recorded_in_realization_of)
-    LegaleExpressie --> Werk: realiseert (eli:realizes)
+    LegaleActiviteit --> Werk: opgenomenInRealisatieVan (eli-dl-recorded_in_realization_of)
+    LegaleExpressie --> Werk: realiseert (eli-realizes)
  
     Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
-    LegaleActiviteit --> Participatie: heeftParticipatie (eli-dl_had_participation)
+    LegaleActiviteit --> Participatie: heeftParticipatie (eli-dl-had_participation)
     BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
     BehandelingVanAgendapunt --> Besluit: geeftAanleidingTot
     Stuk <|-- Besluit
