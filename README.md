@@ -368,7 +368,7 @@ classDiagram
 
     LegaleActiviteit --> Werk: opgenomenInRealisatieVan (eli-dl-recorded_in_realization_of)
     LegaleExpressie --> Werk: realiseert (eli-realizes)
-    
+
     Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
     LegaleActiviteit --> Participatie: heeftParticipatie (eli-dl-had_participation)
     BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
@@ -404,7 +404,7 @@ classDiagram
 ### Vraag en schriftelijk antwoord tijdens zitting
 
 ```
-<div prefix="eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#"> 
+<div prefix="persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#"> 
   <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
     <div property="dcterms:subject" resource="https://data.aalter.be/id/agendapunten/23.1010.7267.2954">
       <span property="dcterms:title">2023_SV_00440 - Opvolging onteigeningsprocedure Spoorwegbosje - bevoegde...></span>
@@ -424,20 +424,29 @@ Welk bijkomende stappen zal het stadsbestuur zetten om de verwerving/onteigening
 Spoorwegbosje alsnog te realiseren voordat NMBS een private verkoop zou laten doorgaan?
 Zal het stadsbestuur contact opnemen met de bevoegde federale minister(s) om de verwerving van
 het Spoorwegbosje te realiseren via onteigening?</span>
-      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie">
+      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie/1">
         <span property="eli-dl:had_participant_person" resource="http://data.lblod.info/id/mandatarissen/5C389E2E57753A000A00031B"></span>
         <span property="eli-dl:participant_person_label">De Meester Tom (PVDA)</span>
-      </div>
-      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie">
-        <div property="eli-dl:had_participant_person">
-          <voornaam>
-          <naam>
+        <div property="eli-dl:role" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie/rol/1">
+          <span property="skos:prefLabel">raadslid</span>
         </div>
-        <span property="eli-dl:participant_person_label">Voorbeeldje voor wanneer niet in officiële zitting, niet-raadslid (expert, burger)</span>
-        <span property="eli-dl:role" resource=""></span>
+      </div>
+      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie/2">
+        <span property="eli-dl:participant_person_label">Voornaam achternaam</span>
+        <div property="eli-dl:had_participant_person" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie/2/persoon/1">
+          <span property="persoon:gebruikteVoornaam" content="Voornaam van iemand"></span>
+          <span property="foaf:familyName" content="Achternaam van iemand"></span>
+        </div>
       </div>
     </div>
     <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2" typeof="sro:InitiatiefrechtAntwoord">
+      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/participatie/1">
+          <span property="eli-dl:had_participant_person" resource="https://data.lblod.info/id/mandatarissen/628E3F70470F7A0008000128"></span>
+          <span property="eli-dl:participant_person_label">bevoegd schepen Tine Heyse</span>
+          <div property="eli-dl:role" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/participatie/rol/1">
+            <span property="skos:prefLabel">bevoegd schepen</span>
+          </div>
+      </div>
       <span property="prov:value">Wij betreuren hoe dan ook dat we voor dit dossier in een juridisch dispuut zijn beland. De rechter
 heeft geoordeeld dat Thuispunt in deze zaak de juiste stappen en procedure heeft gevolgd en dat
 ook de stad hierin geen fouten heeft gemaakt.
@@ -453,8 +462,6 @@ U heeft de stand van zaken van dit dossier aan de kant van Thuispunt Gent ook re
 kunnen vragen op de themacommissie van vorige week. Zij hebben u daar ook op geantwoord.</span>
     </div>
   </div>
-    </div>
-</div>
 </div>
 ```
 
