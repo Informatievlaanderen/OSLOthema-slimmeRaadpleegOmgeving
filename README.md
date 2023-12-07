@@ -467,7 +467,19 @@ kunnen vragen op de themacommissie van vorige week. Zij hebben u daar ook op gea
 
 ### mondeling antwoord in video-opname
 
-Zelfde zitting en agendapunt als hierboven, maar waarbij het antwoord in een video-opname staat.
+Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in een video-opname staat.
+
+```
+<div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
+  <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1" typeof="sro:InitiatiefrechtVraag">
+        <span property="prov:value">Toelichting
+  Thuispunt Gent (TPG) kondigde vorig jaar een onteigeningsprocedure - gericht naar de NMBS - aan...</span>
+  </div>
+  <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2" typeof="sro:InitiatiefrechtAntwoord">
+        
+    </div>
+</div>
+```
 
     <span property="elidl:recorded_in_realization_of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/werk/1" typeof="sro:InitiatiefrechtVraag"></span>
 
