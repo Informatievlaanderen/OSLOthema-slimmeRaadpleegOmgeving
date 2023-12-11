@@ -404,7 +404,7 @@ classDiagram
 ### Vraag en schriftelijk antwoord tijdens zitting
 
 ```
-<div prefix="persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#"> 
+<div prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# dctypes: http://purl.org/dc/dcmitype/ persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#"> 
   <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
     <div property="dcterms:subject" resource="https://data.aalter.be/id/agendapunten/23.1010.7267.2954">
       <span property="dcterms:title">2023_SV_00440 - Opvolging onteigeningsprocedure Spoorwegbosje - bevoegde...></span>
@@ -479,7 +479,8 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
   </div>
   <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2" typeof="sro:InitiatiefrechtAntwoord">
     <div property="eli-dl:recorded_in_realization_of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/werk">
-      <div rev="eli:realizes" resource="https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2&offsets=2023-10-22T17:09:50Z,2023-10-23T20:00:15Z">
+      <div rev="eli:realizes" resource="https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2&offsets=2023-10-22T17:09:50Z,2023-10-23T20:00:15Z" typeof="dctypes:MovingImage">
+        <span property="oa:source" resource="https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2"></span>
       </div>
     </div> 
   </div>
@@ -497,9 +498,9 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
   </div>
   <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2" typeof="sro:InitiatiefrechtAntwoord">
     <div property="eli-dl:recorded_in_realization_of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/werk">
-      <div rev="eli:realizes" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/video">
+      <div rev="eli:realizes" resource="https://www.youtube.com/watch?v=SBWocOBTKrg#t=30,60">
         <span property="oa:source" resource="https://www.youtube.com/watch?v=SBWocOBTKrg"></span>
-        <div property="oa:hasSelector" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/video/selector" typeof="oa:FragmentSelector">
+        <div property="oa:hasSelector" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/selector/1" typeof="oa:FragmentSelector">
                 <span property="oa:conformsTo" resource="http://www.w3.org/TR/media-frags/"></span>
                 <span property="rdf:value" content="t=30,60"></span>
         </div>
@@ -508,8 +509,6 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
   </div>
 </div>
 ```
-
-    <span property="elidl:recorded_in_realization_of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/werk/1" typeof="sro:InitiatiefrechtVraag"></span>
 
 ### Schriftelijke vraag en antwoord, niet op zitting
 
