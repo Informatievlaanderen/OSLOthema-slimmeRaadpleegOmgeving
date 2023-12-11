@@ -469,6 +469,8 @@ kunnen vragen op de themacommissie van vorige week. Zij hebben u daar ook op gea
 
 Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in een video-opname staat.
 
+### Videoplayer
+
 ```
 <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
   <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1" typeof="sro:InitiatiefrechtVraag">
@@ -476,8 +478,34 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
   Thuispunt Gent (TPG) kondigde vorig jaar een onteigeningsprocedure - gericht naar de NMBS - aan...</span>
   </div>
   <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2" typeof="sro:InitiatiefrechtAntwoord">
-        
-    </div>
+    <div property="eli-dl:recorded_in_realization_of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/werk">
+      <div rev="eli:realizes" resource="https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2&offsets=2023-10-22T17:09:50Z,2023-10-23T20:00:15Z">
+      </div>
+    </div> 
+  </div>
+</div>
+```
+
+
+### Youtube
+
+```
+<div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
+  <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1" typeof="sro:InitiatiefrechtVraag">
+        <span property="prov:value">Toelichting
+  Thuispunt Gent (TPG) kondigde vorig jaar een onteigeningsprocedure - gericht naar de NMBS - aan...</span>
+  </div>
+  <div property="eli-dl:consists-of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2" typeof="sro:InitiatiefrechtAntwoord">
+    <div property="eli-dl:recorded_in_realization_of" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/werk">
+      <div rev="eli:realizes" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/video">
+        <span property="oa:source" resource="https://www.youtube.com/watch?v=SBWocOBTKrg"></span>
+        <div property="oa:hasSelector" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/video/selector" typeof="oa:FragmentSelector">
+                <span property="oa:conformsTo" resource="http://www.w3.org/TR/media-frags/"></span>
+                <span property="rdf:value" content="t=30,60"></span>
+        </div>
+      </div>
+    </div> 
+  </div>
 </div>
 ```
 
