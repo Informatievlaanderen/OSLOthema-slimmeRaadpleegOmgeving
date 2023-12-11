@@ -386,6 +386,14 @@ classDiagram
     class InitiatiefrechtVraag {
       +indieningsdatum: Datum
       +motivering: String
+      +datumAntwoordVerwacht: Datum
+      +type: Code
+    }
+    class InitiatiefrechtVraag {
+      +indieningsdatum: Datum
+      +motivering: String
+      +datumAntwoordVerwacht: Datum
+      +schriftelijk: Boolean
     }
     class Participatie {
       +heeft_participant_persoon: Persoon
@@ -511,6 +519,65 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
 ```
 
 ### Schriftelijke vraag en antwoord, niet op zitting
+
+```
+<div prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# dctypes: http://purl.org/dc/dcmitype/ persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#"> 
+  <div resource="https://data.aalter.be/id/schriftelijkevraag/23.1010.7267.2954" typeof="sro:InitiatiefrechtVraag">
+    <span property="sro:Iniatiefrecht.type" resource="https://data.vlaanderen.be/id/concept/Initiatiefrecht/SchriftelijkeVraag"></span>
+    <span property="prov:value">Toelichting
+      Thuispunt Gent (TPG) kondigde vorig jaar een onteigeningsprocedure - gericht naar de NMBS - aan
+      om bijkomende gronden te verwerven voor de bouw van sociale woningen, meer bepaald voor het
+      Spoorwegbosje. De NMBS reageerde hierop door een rechtszaak te openen tegen TPG en de Stad
+      Gent. In juli werd via de pers bekend gemaakt dat de NMBS ongelijk had en TPG de grond mag
+      onteigenen van de rechter. Intussen zou de NMBS gereageerd hebben met een beroepsprocedure
+      tegen deze uitspraak om de onteigening tegen te houden.
+      De PVDA-fractie heeft daarover volgende vragen:
+      Vraag
+      Wat is de reactie van het stadsbestuur op de aangekondigde beroepsprocedure van de NMBS?
+      Welk bijkomende stappen zal het stadsbestuur zetten om de verwerving/onteigening van het
+      Spoorwegbosje alsnog te realiseren voordat NMBS een private verkoop zou laten doorgaan?
+      Zal het stadsbestuur contact opnemen met de bevoegde federale minister(s) om de verwerving van
+      het Spoorwegbosje te realiseren via onteigening?</span>
+      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/schriftelijkevraag/23.1010.7267.2954/participatie/1">
+        <span property="eli-dl:had_participant_person" resource="http://data.lblod.info/id/mandatarissen/5C389E2E57753A000A00031B"></span>
+        <span property="eli-dl:participant_person_label">De Meester Tom (PVDA)</span>
+        <div property="eli-dl:role" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie/rol/1">
+          <span property="skos:prefLabel">raadslid</span>
+        </div>
+      </div>
+      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie/2">
+        <span property="eli-dl:participant_person_label">Voornaam achternaam</span>
+        <div property="eli-dl:had_participant_person" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/1/participatie/2/persoon/1">
+          <span property="persoon:gebruikteVoornaam" content="Voornaam van iemand"></span>
+          <span property="foaf:familyName" content="Achternaam van iemand"></span>
+        </div>
+      </div>
+    </div>
+    <div resource="https://data.aalter.be/id/schriftelijkantwoord/23.1010.7267.2954" typeof="sro:InitiatiefrechtAntwoord">
+      <span property="sro:Iniatiefrecht.type" resource="https://data.vlaanderen.be/id/concept/Initiatiefrecht/SchriftelijkAntwoord"></span>
+      <div property="eli-dl:had_participation" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/participatie/1">
+        <span property="eli-dl:had_participant_person" resource="https://data.lblod.info/id/mandatarissen/628E3F70470F7A0008000128"></span>
+        <span property="eli-dl:participant_person_label">bevoegd schepen Tine Heyse</span>
+        <div property="eli-dl:role" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954/activiteit/2/participatie/rol/1">
+          <span property="skos:prefLabel">bevoegd schepen</span>
+        </div>
+        <span property="prov:value">Wij betreuren hoe dan ook dat we voor dit dossier in een juridisch dispuut zijn beland. De rechter
+          heeft geoordeeld dat Thuispunt in deze zaak de juiste stappen en procedure heeft gevolgd en dat
+          ook de stad hierin geen fouten heeft gemaakt.
+          De NMBS denkt daar anders over en heeft intussen beroep aangetekend, zowel tegen Thuispunt
+          Gent als tegen Stad Gent. De Stad Gent is niet gedagvaard in de hoedanigheid van onteigenende
+          overheid, maar in het kader van een aansprakelijkheids- vordering (eis tot schadevergoeding).
+          Thuispunt Gent treedt in deze zaak op als onteigend bestuur, zodat de Stad Gent zelf geen
+          bijkomende stappen zal zetten wat betreft de onteigeningsprocedure.
+          Thuispunt Gent kan de bestuurlijke fase waarbij het onteigeningsplan wordt opgemaakt verder
+          zetten, en het is aan Thuispunt Gent om – in de loop van de bestuurlijke fase – de federale Minister
+          te bevragen naar een machtiging om de NMBS te mogen onteigenen.
+          U heeft de stand van zaken van dit dossier aan de kant van Thuispunt Gent ook rechtstreeks aan hen
+          kunnen vragen op de themacommissie van vorige week. Zij hebben u daar ook op geantwoord.</span>
+        </div>
+      </div>
+    </div>
+```
 
 ## Administrative information
 
