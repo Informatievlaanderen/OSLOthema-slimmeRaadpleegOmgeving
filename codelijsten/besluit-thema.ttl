@@ -36,7 +36,7 @@
     skos:prefLabel "Erfgoed." ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 	
-<https://data.vlaanderen.be/id/concept/BesluitThema/Kunst-EnCultuurbeleid> 
+<https://data.vlaanderen.be/id/concept/BesluitThema/KunstEnCultuurbeleid> 
     a skos:Concept ;
     skos:definition "Kunst- en cultuurbeleid." ;
     skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> ;
