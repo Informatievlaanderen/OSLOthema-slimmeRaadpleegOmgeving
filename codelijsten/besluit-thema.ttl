@@ -19,3 +19,198 @@
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
     skos:prefLabel "Culturele instellingen." ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+
+<https://data.vlaanderen.be/id/concept/BesluitThema/Evenementen> 
+    a skos:Concept ;
+    skos:definition "Evenementen." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Evenementen." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Erfgoed> 
+    a skos:Concept ;
+    skos:definition "Erfgoed." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Erfgoed." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Kunst-EnCultuurbeleid> 
+    a skos:Concept ;
+    skos:definition "Kunst- en cultuurbeleid." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Kunst- en cultuurbeleid." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Erediensten> 
+    a skos:Concept ;
+    skos:definition "Erediensten." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Erediensten." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Sport> 
+    a skos:Concept ;
+    skos:definition "Sport." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Sport." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/WonenEnRuimtelijkeOrdening> 
+    a skos:Concept ;
+    skos:definition "Wonen en ruimtelijke ordening." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Wonen en ruimtelijke ordening." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Mobiliteit> 
+    a skos:Concept ;
+    skos:definition "Mobiliteit." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Mobiliteit." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Veiligheid> 
+    a skos:Concept ;
+    skos:definition "Veiligheid." ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/SamenlevenEnDiversiteit> ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/Mobiliteit> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Veiligheid." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+
+<https://data.vlaanderen.be/id/concept/BesluitThema/AlgemeenBestuurEnFinanciën> 
+    a skos:Concept ;
+    skos:definition "Algemeen bestuur en financiën." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Algemeen bestuur en financiën." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+
+<https://data.vlaanderen.be/id/concept/BesluitThema/AlgemeenBestuur> 
+    a skos:Concept ;
+    skos:definition "Algemeen bestuur." ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/AlgemeenBestuurEnFinanciën> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Algemeen bestuur." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+
+<https://data.vlaanderen.be/id/concept/BesluitThema/AlgemeneFinanciën> 
+    a skos:Concept ;
+    skos:definition "Algemene financiën." ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/AlgemeenBestuurEnFinanciën> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Algemene financiën." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/ZorgEnGezondheid> 
+    a skos:Concept ;
+    skos:definition "Zorg en gezondheid." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Zorg en gezondheid." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Opvang> 
+    a skos:Concept ;
+    skos:definition "Opvang." ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/ZorgEnGezondheid> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Opvang." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/OndernemenEnWerken> 
+    a skos:Concept ;
+    skos:definition "Ondernemen en werken." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Ondernemen en werken." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Ondernemen> 
+    a skos:Concept ;
+    skos:definition "Ondernemen." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/Doelgroepenbeleid> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Ondernemen." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Werk 
+    a skos:Concept ;
+    skos:definition "Werk." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/OndernemenEnWerken> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Werk." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Vacatures> 
+    a skos:Concept ;
+    skos:definition "Vacatures." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/OndernemenEnWerken> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Vacatures." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/KlimaatMilieuEnNatuur> 
+    a skos:Concept ;
+    skos:definition "Klimaat, Milieu en Natuur." ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/WonenEnRuimtelijkeOrdening> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Klimaat, Milieu en Natuur." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Doelgroepenbeleid> 
+    a skos:Concept ;
+    skos:definition "Doelgroepenbeleid." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Doelgroepenbeleid." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Jeugd> 
+    a skos:Concept ;
+    skos:definition "Jeugd." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/Doelgroepenbeleid> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Jeugd." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Senioren> 
+    a skos:Concept ;
+    skos:definition "Senioren." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/Doelgroepenbeleid> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Senioren." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/SamenlevenEnDiversiteit> 
+    a skos:Concept ;
+    skos:definition "Samenleven en diversiteit." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Samenleven en diversiteit." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+
+<https://data.vlaanderen.be/id/concept/BesluitThema/Armoede> 
+    a skos:Concept ;
+    skos:definition "Armoede." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/Doelgroepenbeleid> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Armoede." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/Integratie> 
+    a skos:Concept ;
+    skos:definition "Integratie." ;
+    skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/Doelgroepenbeleid> ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/ZorgEnGezondheid> ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/SamenlevenEnDiversiteit> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Integratie." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+	
+<https://data.vlaanderen.be/id/concept/BesluitThema/BevolkingEnBurgerlijkeStand> 
+    a skos:Concept ;
+    skos:definition "Bevolking en burgerlijke stand." ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Bevolking en burgerlijke stand." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
