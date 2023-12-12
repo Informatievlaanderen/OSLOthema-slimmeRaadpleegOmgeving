@@ -136,7 +136,7 @@
     skos:prefLabel "Ondernemen." ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 	
-<https://data.vlaanderen.be/id/concept/BesluitThema/Werk 
+<https://data.vlaanderen.be/id/concept/BesluitThema/Werk>
     a skos:Concept ;
     skos:definition "Werk." ;
     skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/OndernemenEnWerken> ;
