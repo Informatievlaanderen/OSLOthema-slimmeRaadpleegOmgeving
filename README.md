@@ -182,6 +182,20 @@ classDiagram
 
 ### Kadastrale gegevens
 
+### Besluit als input voor besluit
+
+Principe besluit Gzg
+
+Definitieve beslissing GzG
+
+Besluit van gebruikersbevraging -> koppelt terug -> koppelt terug
+
+	- Besluit als input voor nieuw besluit
+	- Wat met gebruikersbevraging?
+
+	- Amends, changes…
+
+Van college naar gemeenteraad over eenzelfde besluit, is maar 1 besluit…
 
 ## Thema's
 
