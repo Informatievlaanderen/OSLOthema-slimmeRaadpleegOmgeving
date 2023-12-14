@@ -353,6 +353,10 @@ Bijvoorbeeld bij: [Green Valley](https://raadpleeg-aalter.onlinesmartcities.be/z
 
 Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten, locaties) wordt er gekeken naar de FLINT ontology en OSLO-Steps. Dit is nog volop in onderzoek.
 
+## Ontwerpbesluit
+
+Ontwerpbesluit gemaakt op college, ter goedkeuring op gemeenteraad.
+
 ## Initiatiefrecht
 
 ```mermaid
