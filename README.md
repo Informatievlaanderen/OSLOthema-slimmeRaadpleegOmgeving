@@ -416,6 +416,26 @@ class 21tot22oktober2023 {
 }
 ```
 
+```mermaid
+classDiagram
+	Recht --> Rechtsgrond: grondslag
+        Recht --> Modaliteit: heeftModaliteit
+	Recht --|> Fact
+	Rechtsgrond --|> Fact
+	Modaliteit --|> Fact
+
+	Verbintenis --> Modaliteit: heeftModaliteit
+
+	Handeling --> Agent: actor
+	Handeling --> Agent: begunstigde
+	Handeling --> Besluit: geeftAanleidingTot
+	Handeling --> Fact: creates
+	Handeling --> Fact: terminates
+	Handeling --> Object: heeftObject
+
+	Besluit --> Rechtsgrond: realiseert
+```
+
 ## Ontwerpbesluit
 
 Ontwerpbesluit gemaakt op college, ter goedkeuring op gemeenteraad.
