@@ -367,6 +367,55 @@ Bijvoorbeeld bij: [Green Valley](https://raadpleeg-aalter.onlinesmartcities.be/z
 
 Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten, locaties) wordt er gekeken naar de FLINT ontology en OSLO-Steps. Dit is nog volop in onderzoek.
 
+```mermaid
+classDiagram
+ToestemmingGebruikVanDrone --> StadAalter: actor (flint-actor)
+ToestemmingGebruikVanDrone --> LokalePolitie: begunstigde (flint-recipient)
+ToestemmingGebruikVanDrone --> RechtOmMetDroneTeVliegen: genereert (flint-creates)
+ToestemmingGebruikVanDrone --> 2023_CBS_123: geeftAanleidingTot (prov-generated)
+
+class ToestemmingGebruikVanDrone {
+ a Handeling (flint:Act)
+ a LegaleActiviteit (eli-dl:LegalActivity)
+ a Beslissingsactiviteit (besluitvorming:Beslissingsactiviteit)
+ +resultaat toestemming
+}
+
+class RechtOmMetDroneTeVliegen {
+ a Recht (oslo:Recht)
+}
+
+class StadAalter {
+ a Bestuursorgaan (besluit:Bestuursorgaan)
+}
+
+class LokalePolitie {
+ a Agent (foaf:Agent)
+}
+
+RechtOmMetDroneTeVliegen --> Rechtsgrond_2023_CBS_123 : grondslag
+2023_CBS_123 --> Rechtsgrond_2023_CBS_123: realiseert (eli-realizes)
+
+RechtOmMetDroneTeVliegen --> Modaliteit: heeftModaliteit
+Modaliteit --> GrondgebiedStadAalter: geografischeDekking (dcterms-spatial)
+Modaliteit --> 21tot22oktober2023: periode (dcterms-date)
+
+class 2023_CBS_123 {
+ a Besluit (besluit:Besluit)
+titel (eli:title) "2023_CBS_123 - Collegebeslissing betreffende de toestemming tot zichtbaar gebruik van een drone"
+}
+
+class GrondgebiedStadAalter {
+  a Locatie (prov:Location)
+}
+
+class 21tot22oktober2023 {
+ a Periode (time:ProperInterval)
+ start "2023-01-01T00:00:00Z"
+ einde "2023-01-02T00:00:00Z"
+}
+```
+
 ## Ontwerpbesluit
 
 Ontwerpbesluit gemaakt op college, ter goedkeuring op gemeenteraad.
