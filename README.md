@@ -453,8 +453,7 @@ classDiagram
     InitiatiefrechtVraag <|-- Voorstel
     InitiatiefrechtVraag <|-- Interpellatie
 
-    LegaleActiviteit --> Werk: opgenomenInRealisatieVan (eli-dl-recorded_in_realization_of)
-    LegaleExpressie --> Werk: realiseert (eli-realizes)
+    Stuk --> LegaleActiviteit: onderwerp (dcterms-subject)
 
     Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
     LegaleActiviteit --> Participatie: heeftParticipatie (eli-dl-had_participation)
@@ -474,13 +473,8 @@ classDiagram
       +indieningsdatum: Datum
       +motivering: String
       +datumAntwoordVerwacht: Datum
-      +type: Code
-    }
-    class InitiatiefrechtVraag {
-      +indieningsdatum: Datum
-      +motivering: String
-      +datumAntwoordVerwacht: Datum
       +schriftelijk: Boolean
+      +type: Code
     }
     class Participatie {
       +heeft_participant_persoon: Persoon
