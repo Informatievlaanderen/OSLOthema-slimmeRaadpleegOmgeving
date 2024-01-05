@@ -182,6 +182,23 @@ classDiagram
 
 ### Kadastrale gegevens
 
+```
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#"> 
+<div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
+  <span property="eli:title" datatype="xsd:string">Overwegende dat het college akkoord ging met de locatie voor de PoP-cabine in Drieselken, kadastraal gekend als <span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/perceel/1">7de afdeling, sectie A, deel van nummer 892L</span></span>
+</div>
+<div typeof="https://data.vlaanderen.be/ns/perceel#Perceel" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/perceel/1">
+<span property="generiek:lokaleIdentificator" content="11001B0009-00G004""></span>
+<span property="adres:verwijstNaar" content="https://data.vlaanderen.be/id/perceel/11001B0001-00S000"></span>
+</div>
+</div>
+```
+
+```mermaid
+classDiagram
+ 
+```
+
 ### Besluit als input voor besluit
 
 Principe besluit Gzg
