@@ -1,4 +1,3 @@
-
 # OSLO Slimme Raadpleegomgeving
 
 De opzet van dit traject is om inhoudelijke annotaties toe te voegen aan de besluiten. Er wordt hierbij gekeken naar het toevoegen van geo-informatie (straten, wijken, …), thema-informatie en het linken van reglementen zodat een gecoördineerde versie steeds centraal beschikbaar is.
@@ -42,7 +41,7 @@ Andere mogelijkheid is het gebruik van de [basisregisters Vlaanderen API](https:
 Bij adressen wordt gebruik gemaakt van [Adresvoorstellingen](https://data.vlaanderen.be/doc/applicatieprofiel/adresregister/#Adresvoorstelling) die op hun beurt verwijzen naar een adres in het basisregister.
 
 ```
-<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#"> 
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#">
 <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
   <span property="eli:title" datatype="xsd:string">2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning voor het verbouwen en uitbreiden van een eengezinswoning  - zonder openbaar onderzoek  - <span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1">Molenstraat 1</span>, 9032 Gent - Vergunning</span>
 </div>
@@ -84,7 +83,7 @@ Wanneer er meerdere huisnummers geannoteerd worden, raden we aan om elk adres ap
 De adresvoorstellingen dienen apart beschreven te worden zoals hierboven getoond.
 
 ```
-<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#"> 
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#">
 <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
   <span property="eli:title" datatype="xsd:string">2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning voor het verbouwen en uitbreiden van een eengezinswoning  - zonder openbaar onderzoek  -
 <span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1">Molenstraat 1</span>
@@ -114,7 +113,7 @@ classDiagram
 Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met een naam en geometrie kunnen we [Plaats](https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/#Plaats) van OSLO generiek gebruiken.
 
 ```
-<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540">
     <span property="eli:title" datatype="xsd:string">2023_CBS_08501 - 15748/M/1 - Geluidsuitzending - op donderdag 21 september 2023 (Gentsterpop) op de
     <div property="dcterms:spatial" typeof="locn:Location" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1">
@@ -154,7 +153,7 @@ Om enkel coördinaten te linken met het besluit, dient nog altijd met Geometrie 
 Bijvoorbeeld: plaatsing van tijdelijke sluikstortcamera aan landweg.
 
 ```
-<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540">
     <span property="eli:title" datatype="xsd:string">2023_CBS_1234 plaatsing van tijdelijke sluikstortcamera aan landweg></span>
       <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/geometrie/1">
@@ -182,12 +181,16 @@ classDiagram
 
 ### Kadastrale gegevens
 
-Om een besluit te linken met een bepaald perceel wordt de URI en objectidentificator (CaPaKey waarbij forward slash / vervangen werd door koppelteken) van het perceel bewaard. 
+Om een besluit te linken met een bepaald perceel wordt de URI en objectidentificator (CaPaKey waarbij forward slash / vervangen werd door koppelteken) van het perceel bewaard.
 
 Note voor ontwikkelaars: de URI kan opgehaald worden via de [basisregister API](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/GetParcelV2). Hiervoor dient de gebruiker wel de CaPaKey mee te geven.
 
 ```
-<div prefix="perceel: https://data.vlaanderen.be/ns/perceel# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ generiek: https://data.vlaanderen.be/ns/generiek#"> 
+<<<<<<< HEAD
+<div prefix="perceel: https://data.vlaanderen.be/ns/perceel# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ generiek: https://data.vlaanderen.be/ns/generiek#">
+=======
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#">
+>>>>>>> b3a4e2e (draft decision example)
 <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
   <span property="eli:title" datatype="xsd:string">Overwegende dat het college akkoord ging met de locatie voor de PoP-cabine in Drieselken, kadastraal gekend als <span property="dcterms:spatial" resource="https://data.vlaanderen.be/id/perceel/11001B0001-00S000">7de afdeling, sectie A, deel van nummer 892L</span></span>
 </div>
@@ -199,15 +202,15 @@ Note voor ontwikkelaars: de URI kan opgehaald worden via de [basisregister API](
 
 ```mermaid
 classDiagram
-	2023_CBS_1234 --> 11001B0001_00S000: geografischeDekking (dcterms-spatial)
-	class 2023_CBS_1234 {
-	      a Besluit (besluit:Besluit)
-	      titel (eli:title) "Overwegende dat het college akkoord ging"
-	}
-	class 11001B0001_00S000 {
-		a Perceel (perceel:Perceel)
-		lokaleIdentificator (generiek:lokaleIdentificator) "11001B0009-00G004"
-	}
+    2023_CBS_1234 --> 11001B0001_00S000: geografischeDekking (dcterms-spatial)
+    class 2023_CBS_1234 {
+          a Besluit (besluit:Besluit)
+          titel (eli:title) "Overwegende dat het college akkoord ging"
+    }
+    class 11001B0001_00S000 {
+        a Perceel (perceel:Perceel)
+        lokaleIdentificator (generiek:lokaleIdentificator) "11001B0009-00G004"
+    }
 ```
 
 ### Besluit als input voor besluit
@@ -218,10 +221,10 @@ Definitieve beslissing GzG
 
 Besluit van gebruikersbevraging -> koppelt terug -> koppelt terug
 
-	- Besluit als input voor nieuw besluit
-	- Wat met gebruikersbevraging?
+    - Besluit als input voor nieuw besluit
+    - Wat met gebruikersbevraging?
 
-	- Amends, changes…
+    - Amends, changes…
 
 Van college naar gemeenteraad over eenzelfde besluit, is maar 1 besluit…
 
@@ -235,7 +238,7 @@ De bedoeling is dat deze hoofdthema's gekoppeld worden met diverse rapporteringe
 
 De relatie `eli:is_about` wordt gebruikt om de link tussen het besluit en het thema te maken:
 ```
-<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
     <span property="eli:title" datatype="xsd:string">Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein</span>
     <span property="eli:is_about" resource="https://data.vlaanderen.be/id/concept/BesluitThema/CultuurEnVrijeTijd"></span>
@@ -261,7 +264,7 @@ classDiagram
 Lokaal kunnen er specifiekere thema's gebruikt worden. Hierbij dient een relatie `skos:broader` of `skos:related` voorzien te worden naar een hoofdthema uit de codelijst van hierboven.
 
 ```
-<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#" skos: http://www.w3.org/2004/02/skos/core#> 
+<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#" skos: http://www.w3.org/2004/02/skos/core#>
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
     <span property="eli:title" datatype="xsd:string">Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein</span>
     <div property="eli:is_about" resource="https://data.aalter.be/id/concept/besluitthema/terrasvergunning" typeof="skos:Concept">
@@ -296,7 +299,7 @@ Om te verwijzen naar een LPDC/IPDC-code wordt er verwezen naar een URI, zoals `h
 
 Het voorbeeld hieronder legt de "bekrachtigt"-relatie tussen een besluit en het LPDC product (instantie van een conceptual public service).
 ```
-<div prefix="ipdc-lpdc: https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+<div prefix="ipdc-lpdc: https://productencatalogus.data.vlaanderen.be/ns/ipdc-lpdc# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
     <span property="eli:title" datatype="xsd:string">Goedkeuring dienstverlening: Terrasvergunning - Inname openbaar domein</span>
     <div property="sro:bekrachtigt" resource="https://ipdc.vlaanderen.be/id/instantie/27543" typeof="ipdc-lpdc:InstancePublicService">
@@ -335,7 +338,7 @@ Nota:
 * telkens een nieuwe versie van het gecoördineerde reglement gemaakt wordt, dient een nieuwe URI (URL) aangemaakt te worden voor de specifieke versie
 
 ```
-<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#"> 
+<div prefix="sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#">
   <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
     <span property="eli:title" datatype="xsd:string">2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs</span>
@@ -384,7 +387,7 @@ classDiagram
 
 ## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
 
-Idee: met GeoSPARQL kunnen besluiten in een bepaalde polygoon bevraagd worden 
+Idee: met GeoSPARQL kunnen besluiten in een bepaalde polygoon bevraagd worden
 
 ## Zoeken adhv woorden in besluiten
 
@@ -446,27 +449,84 @@ class 21tot22oktober2023 {
 
 ```mermaid
 classDiagram
-	Recht --> Rechtsgrond: grondslag
+    Recht --> Rechtsgrond: grondslag
         Recht --> Modaliteit: heeftModaliteit
-	Recht --|> Fact
-	Rechtsgrond --|> Fact
-	Modaliteit --|> Fact
+    Recht --|> Fact
+    Rechtsgrond --|> Fact
+    Modaliteit --|> Fact
 
-	Verbintenis --> Modaliteit: heeftModaliteit
+    Verbintenis --> Modaliteit: heeftModaliteit
 
-	Handeling --> Agent: actor
-	Handeling --> Agent: begunstigde
-	Handeling --> Besluit: geeftAanleidingTot
-	Handeling --> Fact: creates
-	Handeling --> Fact: terminates
-	Handeling --> Object: heeftObject
+    Handeling --> Agent: actor
+    Handeling --> Agent: begunstigde
+    Handeling --> Besluit: geeftAanleidingTot
+    Handeling --> Fact: creates
+    Handeling --> Fact: terminates
+    Handeling --> Object: heeftObject
 
-	Besluit --> Rechtsgrond: realiseert
+    Besluit --> Rechtsgrond: realiseert
 ```
 
 ## Ontwerpbesluit
 
 Ontwerpbesluit gemaakt op college, ter goedkeuring op gemeenteraad.
+
+```mermaid
+classDiagram
+
+class Agendapunt_2020_CBS_02870 {
+    <https://data.aalter.be/id/agendapunten/20.0916.0344.5988>
+    a Agendapunt (besluit:Agendapunt)
+    titel: principele goedkeuring ontwerpbesluit voor gemeenteraad
+}
+class Zitting_2020_09_20 {
+    https://data.aalter.be/id/zittingen/19.1120.2751.9225
+    a Zitting (besluit:Zitting)
+
+}
+class Zitting_2020_10_20 {
+    https://data.aalter.be/id/zittingen/19.1120.2751.5000
+    a Zitting (besluit:Zitting)
+
+}
+class Agendapunt_2020_GR_02870 {
+    <https://data.aalter.be/id/agendapunten/20.0916.0344.5988>
+    a Agendapunt (besluit:Agendapunt)
+    titel:  goedkeuring  op gemeenteraad
+}
+class Behandeling_2020_GR_02870 {
+    a Agendapunt (besluit:BehandelingVanAgendapunt)
+    https://data.aalter.be/id/agendapunten/20.0916.0344.5988
+}
+
+class Behandeling_2020_CBS_02870 {
+    a Agendapunt (besluit:BehandelingVanAgendapunt)
+    https://data.aalter.be/id/agendapunten/20.0916.0344.5988
+}
+class OntwerpBesluit_0001_AA {
+    https://data.aalter.be/id/ontwerpbesluiten/0001_AA
+    a Stuk (OSLO-Dossier::Stuk)
+    a OntwerpBesluit (eli-dl:DraftLegislationWork)
+
+}
+class Besluit_2020_CB_02870 {
+    a Besluit (besluit:Besluit)
+}
+
+class Besluit_2020_GR_02870 {
+    a Besluit (besluit:Besluit)
+
+}
+Zitting_2020_10_20 --> Agendapunt_2020_GR_02870: behandelt (besluit-behandelt)
+Zitting_2020_09_20 --> Agendapunt_2020_CBS_02870: behandelt (besluit-behandelt)
+Behandeling_2020_GR_02870 --> Agendapunt_2020_GR_02870: heeftOnderwerp (dc-subject)
+Behandeling_2020_CBS_02870 --> Agendapunt_2020_CBS_02870: heeftOnderwerp (dc-subject)
+Behandeling_2020_GR_02870 --> OntwerpBesluit_0001_AA: gebruikt (prov-used)
+Behandeling_2020_GR_02870 --> Besluit_2020_GR_02870: geeft aanleiding tot (prov-generated)
+Behandeling_2020_CBS_02870 --> Besluit_2020_CB_02870: geeft aanleiding tot (prov-generated)
+Besluit_2020_CB_02870 --> OntwerpBesluit_0001_AA: heeft bijlage (eli-related_to)
+Besluit_2020_GR_02870 --> OntwerpBesluit_0001_AA: neemt over van (eli-dl-adopts)
+```
 
 ## Initiatiefrecht
 
@@ -488,7 +548,7 @@ classDiagram
     BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
     BehandelingVanAgendapunt --> Besluit: geeftAanleidingTot
     Stuk <|-- LegaleExpressie
-    LegaleExpressie <|-- Besluit 
+    LegaleExpressie <|-- Besluit
     LegaleExpressie <|-- OntwerpLegaleVerschijningsvorm
 
     class Agendapunt {
@@ -515,13 +575,13 @@ classDiagram
     class Interpellatie {
       +type: Code
     }
-  
+
 ```
 
 ### Vraag en schriftelijk antwoord tijdens zitting
 
 ```
-<div prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# dctypes: http://purl.org/dc/dcmitype/ persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#"> 
+<div prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# dctypes: http://purl.org/dc/dcmitype/ persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#">
   <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
     <div property="dcterms:subject" resource="https://data.aalter.be/id/agendapunten/23.1010.7267.2954">
       <span property="dcterms:title">2023_SV_00440 - Opvolging onteigeningsprocedure Spoorwegbosje - bevoegde...></span>
@@ -599,7 +659,7 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
       <div rev="eli:realizes" resource="https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2&offsets=2023-10-22T17:09:50Z,2023-10-23T20:00:15Z" typeof="dctypes:MovingImage">
         <span property="oa:source" resource="https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2"></span>
       </div>
-    </div> 
+    </div>
   </div>
 </div>
 ```
@@ -622,7 +682,7 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
                 <span property="rdf:value" content="t=30,60"></span>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
 </div>
 ```
@@ -630,7 +690,7 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
 ### Schriftelijke vraag en antwoord, niet op zitting
 
 ```
-<div prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# dctypes: http://purl.org/dc/dcmitype/ persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#"> 
+<div prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# dctypes: http://purl.org/dc/dcmitype/ persoon: http://data.vlaanderen.be/ns/persoon# foaf: http://xmlns.com/foaf/0.1/ eli-dl: http://data.europa.eu/eli/eli-draft-legislation-ontology# sro: https://data.vlaanderen.be/ns/slimmeraadpleegomgeving# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql# prov: http://w3.org/ns/prov#">
   <div resource="https://data.aalter.be/id/schriftelijkevraag/23.1010.7267.2954" typeof="sro:InitiatiefrechtVraag">
     <span property="sro:Iniatiefrecht.type" resource="https://data.vlaanderen.be/id/concept/Initiatiefrecht/SchriftelijkeVraag"></span>
     <span property="prov:value">Toelichting
@@ -692,7 +752,7 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
 
 **_Editors:_**
 - first read [deze richtlijnen](https://github.com/Informatievlaanderen/OSLO-toolchain/blob/master/doc-user/README.md) .
-- Use [TagsAndNotes.xlsm](https://github.com/Informatievlaanderen/OSLO-allerleiTooltjes/tree/master/EA-Excel/TagsAndNotes) 
+- Use [TagsAndNotes.xlsm](https://github.com/Informatievlaanderen/OSLO-allerleiTooltjes/tree/master/EA-Excel/TagsAndNotes)
   to edit tags in Excel. The files `*.xlsm` are included in the repo as git-ignored.
 
 ### Tags
@@ -704,7 +764,6 @@ The organisation and meaning of the git branches are documented in this table.
 
 
 | Branch | Purpose | Active (y/n) |
-| ------ | --------- | ---------------- | 
+| ------ | --------- | ---------------- |
 | main  | Contains latest diagram | y |
 | standaardenregister  | Contains artefacts for standaardenregister | y |
-
