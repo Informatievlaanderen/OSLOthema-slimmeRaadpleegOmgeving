@@ -444,7 +444,11 @@ class 21tot22oktober2023 {
 
 ## Ontwerpbesluit
 
-Ontwerpbesluit gemaakt op college, ter goedkeuring op gemeenteraad.
+Ontwerpbesluit principieel goedgekeurd op college, ter goedkeuring op gemeenteraad.
+- De behandeling van het agendapunt kan gelinkt worden aan gebruikte document (Stuk) via de relatie gebruikt ([prov:used](http://www.w3.org/ns/prov#used))
+- Het ontwerpbesluit is een stuk, dit kan nog eens extra aangegeven worden via de [dc:type](http://purl.org/dc/terms/type) relatie
+- Het ontwerpbesluit kan gezien worden als een bijlage bij het besluit dat het ontwerp principieel goedkeurt op het college van burgemeester en schepenen. Voor deze relatie wordt [eli:related_to](http://data.europa.eu/eli/ontology#related_to) gebruikt.
+- De goedkeuring van het ontwerpbesluit op de gemeenteraad geeft aanleiding to ([prov:generated](http://www.w3.org/ns/prov#generated)) tot een besluit. Dit besluit kan gelinkt worden aan het ontwerp via de relatie was gebaseerd op ([prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom)
 
 ```mermaid
 classDiagram
