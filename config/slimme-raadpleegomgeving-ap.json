@@ -3,7 +3,7 @@
   "name": "slimme-raadpleegomgeving-ap",
   "type": "ap",
   "eap": "SlimmeRaadpleegomgeving-AP.eap",
-  "diagram": "SlimmeRaadpleegomgeving",
+  "diagram": "OSLO-SlimmeRaadpleegomgeving",
   "template": "mijn-applicatieprofiel-ap.j2",
   "title": "Mijn Applicatieprofiel",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
