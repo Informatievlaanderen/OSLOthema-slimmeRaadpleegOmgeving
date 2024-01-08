@@ -396,16 +396,15 @@ Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten,
 
 ```mermaid
 classDiagram
-ToestemmingGebruikVanDrone --> StadAalter: actor (flint-actor)
-ToestemmingGebruikVanDrone --> LokalePolitie: begunstigde (flint-recipient)
-ToestemmingGebruikVanDrone --> RechtOmMetDroneTeVliegen: genereert (flint-creates)
-ToestemmingGebruikVanDrone --> 2023_CBS_123: geeftAanleidingTot (prov-generated)
+BehandelingVanAgendapuntToestemmingGebruikVanDrone --> StadAalter: actor (flint-actor)
+BehandelingVanAgendapuntToestemmingGebruikVanDrone --> LokalePolitie: begunstigde (flint-recipient)
+BehandelingVanAgendapuntToestemmingGebruikVanDrone --> RechtOmMetDroneTeVliegen: creëert (flint-creates)
+BehandelingVanAgendapuntToestemmingGebruikVanDrone --> 2023_CBS_123: geeftAanleidingTot (prov-generated)
 
-class ToestemmingGebruikVanDrone {
+class BehandelingVanAgendapuntToestemmingGebruikVanDrone {
  a Handeling (flint:Act)
  a LegaleActiviteit (eli-dl:LegalActivity)
- a Beslissingsactiviteit (besluitvorming:Beslissingsactiviteit)
- +resultaat toestemming
+ a BehandelingVanAgendapunt (besluitvorming:Beslissingsactiviteit)
 }
 
 class RechtOmMetDroneTeVliegen {
@@ -441,26 +440,6 @@ class 21tot22oktober2023 {
  start "2023-01-01T00:00:00Z"
  einde "2023-01-02T00:00:00Z"
 }
-```
-
-```mermaid
-classDiagram
-    Recht --> Rechtsgrond: grondslag
-        Recht --> Modaliteit: heeftModaliteit
-    Recht --|> Fact
-    Rechtsgrond --|> Fact
-    Modaliteit --|> Fact
-
-    Verbintenis --> Modaliteit: heeftModaliteit
-
-    Handeling --> Agent: actor
-    Handeling --> Agent: begunstigde
-    Handeling --> Besluit: geeftAanleidingTot
-    Handeling --> Fact: creates
-    Handeling --> Fact: terminates
-    Handeling --> Object: heeftObject
-
-    Besluit --> Rechtsgrond: realiseert
 ```
 
 ## Ontwerpbesluit
