@@ -481,8 +481,6 @@ class Behandeling_2020_CBS_02870 {
 class OntwerpBesluit_0001_AA {
     https://data.aalter.be/id/ontwerpbesluiten/0001_AA
     a Stuk (OSLO-Dossier::Stuk)
-    a OntwerpBesluit (eli-dl:DraftLegislationWork)
-
 }
 class Besluit_2020_CB_02870 {
     a Besluit (besluit:Besluit)
@@ -500,7 +498,7 @@ Behandeling_2020_GR_02870 --> OntwerpBesluit_0001_AA: gebruikt (prov-used)
 Behandeling_2020_GR_02870 --> Besluit_2020_GR_02870: geeft aanleiding tot (prov-generated)
 Behandeling_2020_CBS_02870 --> Besluit_2020_CB_02870: geeft aanleiding tot (prov-generated)
 Besluit_2020_CB_02870 --> OntwerpBesluit_0001_AA: heeft bijlage (eli-related_to)
-Besluit_2020_GR_02870 --> OntwerpBesluit_0001_AA: neemt over van (eli-dl-adopts)
+Besluit_2020_GR_02870 --> OntwerpBesluit_0001_AA: is gebaseerd op (prov-wasDerivedFrom)
 ```
 
 ## Initiatiefrecht
