@@ -186,11 +186,7 @@ Om een besluit te linken met een bepaald perceel wordt de URI en objectidentific
 Note voor ontwikkelaars: de URI kan opgehaald worden via de [basisregister API](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/GetParcelV2). Hiervoor dient de gebruiker wel de CaPaKey mee te geven.
 
 ```
-<<<<<<< HEAD
 <div prefix="perceel: https://data.vlaanderen.be/ns/perceel# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ generiek: https://data.vlaanderen.be/ns/generiek#">
-=======
-<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#">
->>>>>>> b3a4e2e (draft decision example)
 <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
   <span property="eli:title" datatype="xsd:string">Overwegende dat het college akkoord ging met de locatie voor de PoP-cabine in Drieselken, kadastraal gekend als <span property="dcterms:spatial" resource="https://data.vlaanderen.be/id/perceel/11001B0001-00S000">7de afdeling, sectie A, deel van nummer 892L</span></span>
 </div>
