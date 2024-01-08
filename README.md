@@ -512,19 +512,15 @@ classDiagram
     LegaleActiviteit <|-- InitiatiefrechtAntwoord
     InitiatiefrechtAntwoord --> InitiatiefrechtVraag : isGemotiveerdDoor (eli-dl-was_motivated_by)
     BehandelingVanAgendapunt --> InitiatiefrechtVraag: bestaatUit (eli-dl-consists-of)
-    InitiatiefrechtVraag <|-- Verzoekschrift
-    InitiatiefrechtVraag <|-- Voorstel
-    InitiatiefrechtVraag <|-- Interpellatie
 
     Stuk --> LegaleActiviteit: onderwerp (dcterms-subject)
 
-    Voorstel --> OntwerpLegaleVerschijningsvorm: heeftOntwerpbesluit
+    InitiatiefrechtVraag --> Stuk: heeftOntwerpbesluit
     LegaleActiviteit --> Participatie: heeftParticipatie (eli-dl-had_participation)
-    BehandelingVanAgendapunt --> OntwerpLegaleVerschijningsvorm: gebruikt (prov-used)
+    BehandelingVanAgendapunt --> Stuk: gebruikt (prov-used)
     BehandelingVanAgendapunt --> Besluit: geeftAanleidingTot
-    Stuk <|-- LegaleExpressie
-    LegaleExpressie <|-- Besluit
-    LegaleExpressie <|-- OntwerpLegaleVerschijningsvorm
+    Stuk <|-- LegaleVerschijningsvorm
+    LegaleVerschijningsvorm <|-- Besluit
 
     class Agendapunt {
       +titel: String
@@ -546,11 +542,6 @@ classDiagram
       +heeft_verantwoordelijke_persoon: Persoon
      +heeft_verantwoordelijke_organisatie: Organisatie
     }
-
-    class Interpellatie {
-      +type: Code
-    }
-
 ```
 
 ### Vraag en schriftelijk antwoord tijdens zitting
