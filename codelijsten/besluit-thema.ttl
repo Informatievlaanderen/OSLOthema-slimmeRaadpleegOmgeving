@@ -74,13 +74,20 @@
     skos:prefLabel "Mobiliteit." ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 	
-<https://data.vlaanderen.be/id/concept/BesluitThema/Veiligheid> 
+<https://data.vlaanderen.be/id/concept/BesluitThema/Verkeersveiligheid> 
     a skos:Concept ;
-    skos:definition "Veiligheid." ;
-	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/SamenlevenEnDiversiteit> ;
+    skos:definition "Verkeersveiligheid." ;
 	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/Mobiliteit> ;
     skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    skos:prefLabel "Veiligheid." ;
+    skos:prefLabel "Verkeersveiligheid." ;
+    skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
+
+<https://data.vlaanderen.be/id/concept/BesluitThema/VeiligheidInDeSamenleving> 
+    a skos:Concept ;
+    skos:definition "Veiligheid in de samenleving." ;
+	skos:broader <https://data.vlaanderen.be/id/concept/BesluitThema/SamenlevenEnDiversiteit> ;
+    skos:inscheme <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
+    skos:prefLabel "Veiligheid in de samenleving." ;
     skos:topConceptOf <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/AlgemeenBestuurEnFinanciën> 
