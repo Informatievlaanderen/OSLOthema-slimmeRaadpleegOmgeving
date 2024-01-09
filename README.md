@@ -536,15 +536,18 @@ classDiagram
       +indieningsdatum: Datum
       +motivering: String
       +datumAntwoordVerwacht: Datum
-      +schriftelijk: Boolean
       +type: Code
     }
     class Participatie {
       +heeft_participant_persoon: Persoon
+      +heeft_participant_persoon_label: String
       +heeft_participant_organisatie: Organisatie
+      +heeft_participant_organisatie_label: String
       +rol: Rol (indiener, ontvanger)
       +heeft_verantwoordelijke_persoon: Persoon
+      +heeft_verantwoordelijke_persoon_label: String
      +heeft_verantwoordelijke_organisatie: Organisatie
+     +heeft_verantwoordelijke_organisatie_label: String
     }
     class LegaleActiviteit {
       +heeft_verantwoordelijke_persoon: Persoon
@@ -614,6 +617,42 @@ kunnen vragen op de themacommissie van vorige week. Zij hebben u daar ook op gea
     </div>
   </div>
 </div>
+```
+
+```mermaid
+classDiagram
+    Agendapunt <-- BehandelingVanAgendapunt: heeftOnderwerp
+
+    class Agendapunt {
+      title (eli:title) "2023_SV_00440 - Opvolging onteigeningsprocedure Spoorwegbosje - bevoegde.."
+    }
+
+    InitiatiefrechtAntwoord --> InitiatiefrechtVraag : isGemotiveerdDoor (eli-dl-was_motivated_by)
+    BehandelingVanAgendapunt --> InitiatiefrechtVraag: bestaatUit (eli-dl-consists-of)
+
+    InitiatiefrechtVraag --> ParticipatieVraag: heeftParticipatie (eli-dl-had_participation)
+    InitiatiefrechtAntwoord --> ParticipatieAntwoord: heeftParticipatie (eli-dl-had_participation)
+
+    class InitiatiefrechtVraag {
+      +motivering: "Toelichting Thuispunt Gent (TPG) kondigde vorig jaar een onteigeningsprocedure"
+    }
+
+  class InitiatiefrechtAntwoord {
+      +motivering: "Wij betreuren hoe dan ook dat we voor dit dossier"
+    }
+  
+    class ParticipatieVraag {
+      +heeft_participant_persoon: http://data.lblod.info/id/mandatarissen/5C389E2E57753A000A00031B
+      +participant_persoon_label: De Meester Tom (PVDA)
+      +rol: raadslid
+    }
+
+    class ParticipatieAntwoord {
+      +heeft_participant_persoon: https://data.lblod.info/id/mandatarissen/628E3F70470F7A0008000128
+      +participant_persoon_label: bevoegd schepen Tine Heyse
+      +rol: bevoegd schepen
+    }
+
 ```
 
 ### mondeling antwoord in video-opname
