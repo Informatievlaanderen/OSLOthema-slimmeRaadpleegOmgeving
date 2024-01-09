@@ -699,6 +699,7 @@ classDiagram
     }
 
     class Opname {
+    https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2&offsets=2023-10-22T17:09:50Z,2023-10-23T20:00:15Z
       a Video (dctypes:MovingImage)
       +isOnderdeelVan "https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2"
     }
