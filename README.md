@@ -211,6 +211,8 @@ classDiagram
 
 ### Besluit als input voor besluit
 
+* Wordt toegevoegd voor de vierde workshop *
+
 Principe besluit Gzg
 
 Definitieve beslissing GzG
@@ -543,6 +545,10 @@ classDiagram
       +rol: Rol (indiener, ontvanger)
       +heeft_verantwoordelijke_persoon: Persoon
      +heeft_verantwoordelijke_organisatie: Organisatie
+    }
+    class LegaleActiviteit {
+      +heeft_verantwoordelijke_persoon: Persoon
+      +heeft_verantwoordelijke_organisatie: Organisatie
     }
 ```
 
