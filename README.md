@@ -677,6 +677,41 @@ Zelfde zitting, agendapunt en vraag als hierboven, maar waarbij het antwoord in 
 </div>
 ```
 
+```mermaid
+classDiagram
+    Agendapunt <-- BehandelingVanAgendapunt: heeftOnderwerp
+
+    class Agendapunt {
+      title (eli:title) "2023_SV_00440 - Opvolging onteigeningsprocedure Spoorwegbosje - bevoegde.."
+    }
+
+    InitiatiefrechtAntwoord --> InitiatiefrechtVraag : isGemotiveerdDoor (eli-dl-was_motivated_by)
+    BehandelingVanAgendapunt --> InitiatiefrechtVraag: bestaatUit (eli-dl-consists-of)
+
+    InitiatiefrechtVraag --> ParticipatieVraag: heeftParticipatie (eli-dl-had_participation)
+
+    InitiatiefrechtAntwoord --> InitiatiefrechtAntwoordVideoWerk: opgenomen_in_realisatie_van (eli-dl-recorded_in_realization_of)
+
+    Opname --> InitiatiefrechtAntwoordVideoWerk: realiseert (eli-realizes)
+
+    class InitiatiefrechtVraag {
+      +motivering: "Toelichting Thuispunt Gent (TPG) kondigde vorig jaar een onteigeningsprocedure"
+    }
+
+    class Opname {
+      a Video (dctypes:MovingImage)
+      +isOnderdeelVan "https://sdk.companywebcast.com/sdk/player/?id=stadgent_20231023_2"
+    }
+
+  
+    class ParticipatieVraag {
+      +heeft_participant_persoon: http://data.lblod.info/id/mandatarissen/5C389E2E57753A000A00031B
+      +participant_persoon_label: De Meester Tom (PVDA)
+      +rol: raadslid
+    }
+```
+
+
 
 ### Youtube
 
