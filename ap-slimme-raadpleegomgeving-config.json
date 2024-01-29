@@ -3,7 +3,7 @@
   "rapport": "",
   "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO001835",
-  "publicatiedatum": "2023-11-06",
+  "publicatiedatum": "2023-11-07",
   "type_toepassing": "Aanbevolen (vrijwillig)",
   "categorie": "Vocabularium en applicatieprofielen",
   "beschrijving": "ap-slimme-raadpleegomgeving-config.md",
@@ -27,7 +27,7 @@
   "verslagen": [
     {
       "naam": "Verslag Business Werkgroep - 17 oktober 2023",
-      "waarde": "Verslag Business Workshop Slimme Raadpleegomgeving.pdf"
+      "waarde": "20231017_BusinessWorkshop_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     },
     {
       "naam": "Verslag Thematische Werkgroep I - 7 November 2023",
@@ -36,6 +36,10 @@
     {
       "naam": "Verslag Thematische Werkgroep II - 28 November 2023",
       "waarde": "20231128_ThematicWorkshop2_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+    },
+    {
+      "naam": "Verslag Thematische Werkgroep III - 9 Januari 2024",
+      "waarde": "20240109_ThematicWorkshop1_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     }
   ],
   "presentaties": [
@@ -50,6 +54,10 @@
     {
       "naam": "Presentatie Thematische Werkgroep II - 2 november 2023",
       "waarde": "20231128_ThematicWorkshop2_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep III - 9 Januari 2024",
+      "waarde": "20240109_ThematicWorkshop3_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     }
   ],
   "functioneel_toepassingsgebied": "Semantische standaard voor de digitale transformatie van de Vlaamse lokale besturen",
