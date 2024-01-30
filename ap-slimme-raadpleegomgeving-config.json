@@ -1,23 +1,24 @@
 {
-  "naam": "Applicatieprofiel en Vocabularium Slimme Raadpleegomgeving",
+  "naam": "Applicatieprofiel Slimme Raadpleegomgeving",
   "rapport": "",
   "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO001835",
   "publicatiedatum": "2023-11-07",
   "type_toepassing": "Aanbevolen (vrijwillig)",
-  "categorie": "Vocabularium en applicatieprofielen",
+  "categorie": "Applicatieprofiel",
   "beschrijving": "ap-slimme-raadpleegomgeving-config.md",
   "specificatiedocument": [
     {
       "naam": "Applicatieprofiel Slimme Raadpleegomgeving",
       "waarde": "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving"
-    },
+    }
+  ],
+  "documentatie": [
     {
       "naam": "Vocabularium Slimme Raadpleegomgeving",
       "waarde": "https://data.vlaanderen.be/ns/slimmeraadpleegomgeving"
     }
   ],
-  "documentatie": [],
   "charter": [
     {
       "naam": "Werkgroep Charter Slimme Raadpleegomgeving",
