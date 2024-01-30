@@ -2,17 +2,17 @@
 {
   "name": "slimme-raadpleegomgeving-ap",
   "type": "ap",
-  "eap": "SlimmeRaadpleegomgeving-AP.eap",
+  "eap": "SlimmeRaadpleegomgeving-AP-en-VOC.eap",
   "diagram": "OSLO-SlimmeRaadpleegomgeving",
   "template": "mijn-applicatieprofiel-ap.j2",
   "title": "Slimme raadpleegomgeving ",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
-  "publication-date": "2023-11-06",
+  "publication-date": "2023-11-07",
   "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
   "contributors-file": "stakeholders.csv",
   "contributors-column": "MijnKolom",
   "site": "site-skeleton/slimme-raadpleegomgeving-ap",
   "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/issues",
-  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaard-in-ontwikkeling/applicatieprofiel-en-vocabularium-slimme-raadpleegomgeving.html"
+  "standaardregisterurl": "https://data.vlaanderen.be/standaarden/standaard-in-ontwikkeling/applicatieprofiel-slimme-raadpleegomgeving.html"
 }
 ]
