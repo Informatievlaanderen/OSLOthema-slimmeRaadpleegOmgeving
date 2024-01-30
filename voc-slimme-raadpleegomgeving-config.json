@@ -1,0 +1,64 @@
+{
+  "naam": "Vocabularium Slimme Raadpleegomgeving",
+  "rapport": "",
+  "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
+  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO001835",
+  "publicatiedatum": "2023-11-07",
+  "type_toepassing": "Aanbevolen (vrijwillig)",
+  "categorie": "Vocabularium",
+  "beschrijving": "voc-slimme-raadpleegomgeving-config.md",
+  "specificatiedocument": [
+    {
+      "naam": "Vocabularium Slimme Raadpleegomgeving",
+      "waarde": "https://data.vlaanderen.be/ns/slimme-raadpleegomgeving"
+    }
+  ],
+  "documentatie": [],
+  "charter": [
+    {
+      "naam": "Werkgroep Charter Slimme Raadpleegomgeving",
+      "waarde": "Werkgroep charter OSLO Slimme Raadpleegomgeving.docx"
+    }
+  ],
+  "verslagen": [
+    {
+      "naam": "Verslag Business Werkgroep - 17 oktober 2023",
+      "waarde": "20231017_BusinessWorkshop_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+    },
+    {
+      "naam": "Verslag Thematische Werkgroep I - 7 November 2023",
+      "waarde": "20231107_ThematicWorkshop1_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+    },
+    {
+      "naam": "Verslag Thematische Werkgroep II - 28 November 2023",
+      "waarde": "20231128_ThematicWorkshop2_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+    },
+    {
+      "naam": "Verslag Thematische Werkgroep III - 9 Januari 2024",
+      "waarde": "20240109_ThematicWorkshop1_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+    }
+  ],
+  "presentaties": [
+    {
+      "naam": "Presentatie Business Werkgroep - 17 oktober 2023",
+      "waarde": "Business Werkgroep presentatie - slimme raadpleegomgeving.pdf"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep I - 7 november 2023",
+      "waarde": "20231107 Thematische Werkgroep 1 - Slimme Raadpleegomgeving V.01.pptx"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep II - 2 november 2023",
+      "waarde": "20231128_ThematicWorkshop2_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep III - 9 Januari 2024",
+      "waarde": "20240109_ThematicWorkshop3_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+    }
+  ],
+  "functioneel_toepassingsgebied": "Semantische standaard voor de digitale transformatie van de Vlaamse lokale besturen",
+  "organisatorisch_werkingsgebied": "lokale besturen, softwareleveranciers van notuleringspaketten en AI toepassingen, alle entiteiten van de Vlaamse overheid",
+  "datum_van_aanmelding": "7 november 2023",
+  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_stuurgroep": "TBD"
+}
