@@ -9,21 +9,21 @@ Jitse;De Cock;Digitaal Vlaanderen;jitse.decock@vlaanderen.be;https://data.vlaand
 William;Verbeeck;Digitaal Vlaanderen;william.verbeeck@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E
 Brecht;Van de Vyvere;Agentschap Binnenlands Bestuur;brecht.vandevyvere@vlaanderen.be;https://data.vlaanderen.be/id/organisatie/OVO002949;E
 Niels;Vandekeybus;Red pencil;niels.vandekeybus@redpencil.io;https://data.vlaanderen.be/doc/organisatie/OVO001835;E
-Nancy;Nimmegeers;Gemeente Aalter;nancy.nimmegeers@aalter.be;;A
+Nancy;Nimmegeers;Gemeente Aalter;nancy.nimmegeers@aalter.be;http://data.lblod.info/id/bestuurseenheden/5116efa8-e96e-46a2-aba6-c077e9056a96;A
 Bart;Stichelmans;Agentschap Binnenlands Bestuur;bart.stichelmans@vlaanderen.be;https://data.vlaanderen.be/doc/organisatie/OVO001835;A
-Heidi;Hurkmans;Gemeente Lommel;;;C
-Luc;Wijns;Gemeente Opwijk;;;C
-Jan;Godderis;Stad Gent;;;C
-Virgini;Geranios;Departement Omgeving;;;C
-Sabrina;Vanderheyden;Gemeente Beringen;;;C
-Norah;Thaens;Gemeente Diest;;;C
-Johan;Artois;Gemeente Haacht;;;C
-Elke;Godefroid;CIPAL Schaubroeck;;;C
-Jonas;Tamsyn;CIPAL Schaubroeck;;;C
-Sander;Vliegen;Green Valley;;;C
+Heidi;Hurkmans;Gemeente Lommel;;http://data.lblod.info/id/bestuurseenheden/d8247b68bb62c768c36308fbd7203c58038e249b8363da29d223aa6cd97cf242;C
+Luc;Wijns;Gemeente Opwijk;;http://data.lblod.info/id/bestuurseenheden/929c049597e4961ea84051927af6be67062da4fc8ed9b755fc33b1597b8cdc7c;C
+Jan;Godderis;Stad Gent;;http://data.lblod.info/id/bestuurseenheden/353234a365664e581db5c2f7cc07add2534b47b8e1ab87c821fc6e6365e6bef5;C
+Virgini;Geranios;Departement Omgeving;;https://omgeving.vlaanderen.be/;C
+Sabrina;Vanderheyden;Gemeente Beringen;;http://data.lblod.info/id/bestuurseenheden/1490ca18f894573f76065dc4fdfa2f9c0bcb00964a6af2e21ff8a81e9f1d1198;C
+Norah;Thaens;Gemeente Diest;;http://data.lblod.info/id/bestuurseenheden/b4ff2bb483e5a18fed7b115a2da7af8447e1a3bec4283fb5cf480810608a1e76;C
+Johan;Artois;Gemeente Haacht;;http://data.lblod.info/id/bestuurseenheden/2ad0d123f4a81787572342c394a1917b81752f42d802d1e013941f56b53bdd2a;C
+Elke;Godefroid;CIPAL Schaubroeck;;https://www.cipalschaubroeck.be/;C
+Jonas;Tamsyn;CIPAL Schaubroeck;;https://www.cipalschaubroeck.be/;C
+Sander;Vliegen;Green Valley;;https://www.greenvalleybelgium.be/;C
 Loes;Deventer;Digitaal Vlaanderen;;https://data.vlaanderen.be/id/organisatie/OVO002949;C
-Ines;Acke;Stad Gent;;;C
-Adrien;Legat;RESA;;;C
-Margot;Geuens;Gemeente Nijlen;;;C
-Katia;Willems;Gemeente Aalter;;;C
-Eveline;Engels;Gemeente Berlaar;;;C
+Ines;Acke;Stad Gent;;http://data.lblod.info/id/bestuurseenheden/353234a365664e581db5c2f7cc07add2534b47b8e1ab87c821fc6e6365e6bef5;C
+Adrien;Legat;RESA;;https://www.resa.be/fr/;C
+Margot;Geuens;Gemeente Nijlen;;http://data.lblod.info/id/bestuurseenheden/fb4ab93def093fcefdcbafe1055941c02bb109290fffb9cd9012d549aed480b8;C
+Katia;Willems;Gemeente Aalter;;http://data.lblod.info/id/bestuurseenheden/5116efa8-e96e-46a2-aba6-c077e9056a96;C
+Eveline;Engels;Gemeente Berlaar;;http://data.lblod.info/id/bestuurseenheden/18eb574437cc9fa5af24990f495aaed7af868d33341faf60cffa2ee0e57dc914;C
