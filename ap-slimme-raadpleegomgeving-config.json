@@ -3,7 +3,7 @@
   "rapport": "",
   "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
   "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO001835",
-  "publicatiedatum": "2023-11-07",
+  "publicatiedatum": "2024-02-08",
   "type_toepassing": "Aanbevolen (vrijwillig)",
   "categorie": "Applicatieprofiel",
   "beschrijving": "ap-slimme-raadpleegomgeving-config.md",
@@ -41,6 +41,10 @@
     {
       "naam": "Verslag Thematische Werkgroep III - 9 Januari 2024",
       "waarde": "20240109_ThematicWorkshop1_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+    },
+    {
+      "naam": "Verslag Thematische Werkgroep IV - 30 Januari 2024",
+      "waarde": "20240130_ThematicWorkshop1_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     }
   ],
   "presentaties": [
@@ -53,17 +57,21 @@
       "waarde": "20231107 Thematische Werkgroep 1 - Slimme Raadpleegomgeving V.01.pptx"
     },
     {
-      "naam": "Presentatie Thematische Werkgroep II - 2 november 2023",
+      "naam": "Presentatie Thematische Werkgroep II - 28 november 2023",
       "waarde": "20231128_ThematicWorkshop2_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     },
     {
       "naam": "Presentatie Thematische Werkgroep III - 9 Januari 2024",
       "waarde": "20240109_ThematicWorkshop3_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+    },
+    {
+      "naam": "Presentatie Thematische Werkgroep IV - 30 Januari 2024",
+      "waarde": "20240130_ThematicWorkshop4_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     }
   ],
   "functioneel_toepassingsgebied": "Semantische standaard voor de digitale transformatie van de Vlaamse lokale besturen",
   "organisatorisch_werkingsgebied": "lokale besturen, softwareleveranciers van notuleringspaketten en AI toepassingen, alle entiteiten van de Vlaamse overheid",
   "datum_van_aanmelding": "7 november 2023",
-  "erkenning_werkgroep_datastandaarden": "TBD",
+  "erkenning_werkgroep_datastandaarden": "12 februari 2024",
   "erkenning_stuurgroep": "TBD"
 }
