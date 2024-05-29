@@ -1,77 +1,80 @@
 {
-  "naam": "Applicatieprofiel Slimme Raadpleegomgeving",
-  "rapport": "",
-  "verantwoordelijke_organisatie": "Agentschap Binnenlands Bestuur",
-  "identificator_organisatie": "http://data.vlaanderen.be/id/organisatie/OVO001835",
-  "publicatiedatum": "2024-02-08",
-  "type_toepassing": "Aanbevolen (vrijwillig)",
-  "categorie": "Applicatieprofiel",
-  "beschrijving": "ap-slimme-raadpleegomgeving-config.md",
-  "specificatiedocument": [
+  "title": "Applicatieprofiel Slimme Raadpleegomgeving",
+  "category": "Applicatieprofiel",
+  "usage": "Aanbevolen (vrijwillig)",
+  "status": "kandidaat-standaard",
+  "descriptionFileName": "ap-slimme-raadpleegomgeving-config.md",
+  "responsibleOrganisation": [
     {
-      "naam": "Applicatieprofiel Slimme Raadpleegomgeving",
-      "waarde": "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving"
+      "name": "Agentschap Binnenlands Bestuur",
+      "resourceReference": "http://data.vlaanderen.be/id/organisatie/OVO001835"
     }
   ],
-  "documentatie": [
+  "publicationDate": "2024-02-08",
+  "specificationDocuments": [
     {
-      "naam": "Vocabularium Slimme Raadpleegomgeving",
-      "waarde": "https://data.vlaanderen.be/ns/slimmeraadpleegomgeving"
+      "name": "Applicatieprofiel Slimme Raadpleegomgeving",
+      "resourceReference": "https://data.vlaanderen.be/doc/applicatieprofiel/slimmeraadpleegomgeving"
     }
   ],
-  "charter": [
+  "documentation": [
     {
-      "naam": "Werkgroep Charter Slimme Raadpleegomgeving",
-      "waarde": "Werkgroep charter OSLO Slimme Raadpleegomgeving.docx"
+      "name": "Vocabularium Slimme Raadpleegomgeving",
+      "resourceReference": "https://data.vlaanderen.be/ns/slimmeraadpleegomgeving"
     }
   ],
-  "verslagen": [
+  "reports": [
     {
-      "naam": "Verslag Business Werkgroep - 17 oktober 2023",
-      "waarde": "20231017_BusinessWorkshop_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+      "name": "Verslag Business Werkgroep - 17 oktober 2023",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/reports/20231017_BusinessWorkshop_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     },
     {
-      "naam": "Verslag Thematische Werkgroep I - 7 November 2023",
-      "waarde": "20231107_ThematicWorkshop1_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+      "name": "Verslag Thematische Werkgroep I - 7 November 2023",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/reports/20231107_ThematicWorkshop1_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     },
     {
-      "naam": "Verslag Thematische Werkgroep II - 28 November 2023",
-      "waarde": "20231128_ThematicWorkshop2_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+      "name": "Verslag Thematische Werkgroep II - 28 November 2023",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/reports/20231128_ThematicWorkshop2_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     },
     {
-      "naam": "Verslag Thematische Werkgroep III - 9 Januari 2024",
-      "waarde": "20240109_ThematicWorkshop3_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+      "name": "Verslag Thematische Werkgroep III - 9 Januari 2024",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/reports/20240109_ThematicWorkshop3_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     },
     {
-      "naam": "Verslag Thematische Werkgroep IV - 30 Januari 2024",
-      "waarde": "20240130_ThematicWorkshop4_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
+      "name": "Verslag Thematische Werkgroep IV - 30 Januari 2024",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/reports/20240130_ThematicWorkshop4_Verslag_OSLOSlimmeRaadpleegomgeving.pdf"
     }
   ],
-  "presentaties": [
+  "charter": {
+    "name": "Werkgroep Charter Slimme Raadpleegomgeving",
+    "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/charter/Werkgroep charter OSLO Slimme Raadpleegomgeving.docx"
+  },
+  "presentations": [
     {
-      "naam": "Presentatie Business Werkgroep - 17 oktober 2023",
-      "waarde": "20231017_BusinessWorkshop_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+      "name": "Presentatie Business Werkgroep - 17 oktober 2023",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/presentations/20231017_BusinessWorkshop_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     },
     {
-      "naam": "Presentatie Thematische Werkgroep I - 7 november 2023",
-      "waarde": "20231107_ThematicWorkshop1_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+      "name": "Presentatie Thematische Werkgroep I - 7 november 2023",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/presentations/20231107_ThematicWorkshop1_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     },
     {
-      "naam": "Presentatie Thematische Werkgroep II - 28 november 2023",
-      "waarde": "20231128_ThematicWorkshop2_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+      "name": "Presentatie Thematische Werkgroep II - 28 november 2023",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/presentations/20231128_ThematicWorkshop2_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     },
     {
-      "naam": "Presentatie Thematische Werkgroep III - 9 Januari 2024",
-      "waarde": "20240109_ThematicWorkshop3_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+      "name": "Presentatie Thematische Werkgroep III - 9 Januari 2024",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/presentations/20240109_ThematicWorkshop3_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     },
     {
-      "naam": "Presentatie Thematische Werkgroep IV - 30 Januari 2024",
-      "waarde": "20240130_ThematicWorkshop4_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
+      "name": "Presentatie Thematische Werkgroep IV - 30 Januari 2024",
+      "resourceReference": "https://raw.githubusercontent.com/Informatievlaanderen/OSLOthema-slimmeRaadpleegOmgeving/standaardenregister/presentations/20240130_ThematicWorkshop4_Powerpoint_OSLOSlimmeRaadpleegomgeving.pptx"
     }
   ],
-  "functioneel_toepassingsgebied": "Semantische standaard voor de digitale transformatie van de Vlaamse lokale besturen",
-  "organisatorisch_werkingsgebied": "lokale besturen, softwareleveranciers van notuleringspaketten en AI toepassingen, alle entiteiten van de Vlaamse overheid",
-  "datum_van_aanmelding": "7 november 2023",
-  "erkenning_werkgroep_datastandaarden": "12 februari 2024",
-  "erkenning_stuurgroep": "TBD"
+  "dateOfRegistration": "7 november 2023",
+  "dateOfAcknowledgementByWorkingGroup": "12 februari 2024",
+  "dateOfAcknowledgementBySteeringCommittee": "TBD",
+  "repository": "OSLOthema-slimmeRaadpleegOmgeving",
+  "datePublicReviewStart": "",
+  "endOfPublicationDate": ""
 }
