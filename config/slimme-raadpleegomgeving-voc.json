@@ -1,6 +1,6 @@
 [
 {
-  "name": "slimme-raadpleegomgeving-voc",
+  "name": "slimmeraadpleegomgeving",
   "type": "voc",
   "eap": "SlimmeRaadpleegomgeving-AP-en-VOC.eap",
   "diagram": "OSLO-SlimmeRaadpleegomgeving",
