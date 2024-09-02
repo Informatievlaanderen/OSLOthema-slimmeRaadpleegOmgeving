@@ -386,7 +386,10 @@ classDiagram
 
 ## besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
 
-Dankzij het applicatieprofiel slimme raadpleegomgeving kunnen besturen hun besluiten linken aan locaties zoals gedefinieerd in [Locatie-gebaseerde informatie](#locatie-gebaseerde-informatie). Voor deze use case gaan we er van uit dat het besluit rechstreeks wordt gelinkt aan de locatie, bv:
+Dankzij het applicatieprofiel slimme raadpleegomgeving kunnen besturen hun besluiten linken aan locaties zoals gedefinieerd in [Locatie-gebaseerde informatie](#locatie-gebaseerde-informatie). Voor deze use case gaan we er van uit dat het besluit rechstreeks wordt gelinkt aan de locatie, dit kan bijvoorbeeld met de rdfa-editor van agentschap binnenlands bestuur.
+![Screenshot from 2024-09-02 16-40-24](https://github.com/user-attachments/assets/0a697acc-3a5d-40ca-9846-d1b2dee71f12)
+
+dit resulteert in volgende geannoteerde html:
 ```html
 <div class="say-editable" about="http://data.lblod.info/id/besluiten/4f3b371f-dcc2-4de7-9bb9-62c2cf37ddb6" typeof="http://data.vlaanderen.be/ns/besluit#Besluit">
   <span resource="https://publicatie.gelinkt-notuleren.vlaanderen.be/id/plaats/3c876c1c-628f-4535-a73f-ce1f3783f669" typeof="http://www.w3.org/ns/locn#Location" property="prov:atLocation">
