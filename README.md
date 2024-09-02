@@ -395,23 +395,22 @@ Bijvoorbeeld bij: [Green Valley](https://raadpleeg-aalter.onlinesmartcities.be/z
 
 ## Drones boven mijn gemeente. Is dit toegestaan?
 
-Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten, locaties) wordt er gekeken naar de FLINT ontology en OSLO-Steps. Dit is nog volop in onderzoek.
+Om de inhoud van besluiten gedetailleerd te ontsluiten (welke actoren, objecten, locaties) wordt er gekeken naar OSLO Omgevingsvergunning. Hier worden toelating gemodelleerd met Normatieve Bepalingen en Activiteiten.
 
 ```mermaid
 classDiagram
-BehandelingVanAgendapuntToestemmingGebruikVanDrone --> StadAalter: actor (flint-actor)
-BehandelingVanAgendapuntToestemmingGebruikVanDrone --> LokalePolitie: begunstigde (flint-recipient)
-BehandelingVanAgendapuntToestemmingGebruikVanDrone --> RechtOmMetDroneTeVliegen: creëert (flint-creates)
+BehandelingVanAgendapuntToestemmingGebruikVanDrone --> StadAalter: heeft verantwoordelijke organisatie (eli-dl-had_responsible_organization)
+BehandelingVanAgendapuntToestemmingGebruikVanDrone --> LokalePolitie: begunstigde (sro-Recht.begunstigde)
+BehandelingVanAgendapuntToestemmingGebruikVanDrone --> RechtOmMetDroneTeVliegen: creëert (prov-generated)
 BehandelingVanAgendapuntToestemmingGebruikVanDrone --> 2023_CBS_123: geeftAanleidingTot (prov-generated)
 
 class BehandelingVanAgendapuntToestemmingGebruikVanDrone {
- a Handeling (flint:Act)
  a LegaleActiviteit (eli-dl:LegalActivity)
  a BehandelingVanAgendapunt (besluitvorming:Beslissingsactiviteit)
 }
 
 class RechtOmMetDroneTeVliegen {
- a Recht (oslo:Recht)
+ a Recht (omgevingsvergunning:Recht)
 }
 
 class StadAalter {
@@ -422,12 +421,11 @@ class LokalePolitie {
  a Agent (foaf:Agent)
 }
 
-RechtOmMetDroneTeVliegen --> Rechtsgrond_2023_CBS_123 : grondslag
-2023_CBS_123 --> Rechtsgrond_2023_CBS_123: realiseert (eli-realizes)
+2023_CBS_123 --> RechtOmMetDroneTeVliegen: realiseert (eli-realizes)
 
-RechtOmMetDroneTeVliegen --> Modaliteit: heeftModaliteit
-Modaliteit --> GrondgebiedStadAalter: geografischeDekking (prov-atLocation)
-Modaliteit --> 21tot22oktober2023: periode (dcterms-date)
+RechtOmMetDroneTeVliegen --> Activiteit: rechtsobject (omgevingsvergunning-rechtsobject)
+Activiteit --> GrondgebiedStadAalter: locatie (omgevingsvergunning-locatie)
+Activiteit --> 21tot22oktober2023: tijdsbestek (omgevingsvergunning-tijdsbestek)
 
 class 2023_CBS_123 {
  a Besluit (besluit:Besluit)
@@ -439,10 +437,20 @@ class GrondgebiedStadAalter {
 }
 
 class 21tot22oktober2023 {
- a Periode (time:ProperInterval)
- start "2023-01-01T00:00:00Z"
- einde "2023-01-02T00:00:00Z"
+ a Periode (time:Interval)
 }
+
+class 21oktober2023 {
+ a Instant (time:Instant)
+ start (time:inXSDDateTime) "2023-10-21T00:00:00Z"
+}
+
+class 22oktober2023 {
+ a Instant (time:Instant)
+ einde (time:inXSDDateTime) "2023-10-22T24:00:00Z"
+}
+21tot22oktober2023 --> 21oktober2023: start (time-hasBeginning)
+21tot22oktober2023 --> 22oktober2023: einde (time-hasEnd)
 ```
 
 ## Ontwerpbesluit
