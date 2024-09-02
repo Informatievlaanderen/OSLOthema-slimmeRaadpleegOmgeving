@@ -43,7 +43,7 @@ Bij adressen wordt gebruik gemaakt van [Adresvoorstellingen](https://data.vlaand
 ```
 <div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#">
 <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
-  <span property="eli:title" datatype="xsd:string">2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning voor het verbouwen en uitbreiden van een eengezinswoning  - zonder openbaar onderzoek  - <span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1">Molenstraat 1</span>, 9032 Gent - Vergunning</span>
+  <span property="eli:title" datatype="xsd:string">2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning voor het verbouwen en uitbreiden van een eengezinswoning  - zonder openbaar onderzoek  - <span property="prov:atLocation" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1">Molenstraat 1</span>, 9032 Gent - Vergunning</span>
 </div>
 <div typeof="locn:Address" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1">
 <span property="adres:Adresvoorstelling.huisnummer" content="1"></span>
@@ -86,11 +86,11 @@ De adresvoorstellingen dienen apart beschreven te worden zoals hierboven getoond
 <div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn:http://www.w3.org/ns/locn#">
 <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
   <span property="eli:title" datatype="xsd:string">2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning voor het verbouwen en uitbreiden van een eengezinswoning  - zonder openbaar onderzoek  -
-<span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1">Molenstraat 1</span>
-<span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/2"></span>
-<span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/3"></span>
+<span property="prov:atLocation" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1">Molenstraat 1</span>
+<span property="prov:atLocation" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/2"></span>
+<span property="prov:atLocation" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/3"></span>
 tem
-<span property="dcterms:spatial" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/4">10</span>
+<span property="prov:atLocation" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/4">10</span>
     , 9032 Gent - Vergunning</span>
 </div>
 </div>
@@ -116,10 +116,10 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
 <div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540">
     <span property="eli:title" datatype="xsd:string">2023_CBS_08501 - 15748/M/1 - Geluidsuitzending - op donderdag 21 september 2023 (Gentsterpop) op de
-    <div property="dcterms:spatial" typeof="locn:Location" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1">
+    <div property="prov:atLocation" typeof="locn:Location" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1">
       <span property="rdfs:label">evenementenweide van de Blaarmeersen aan de Duiklaan te Gent</span>.
       <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie/1">
-<span property="geosparql:asWKT" content="POINT(3.6865100765135135 51.048086068457195)"" datatype="geosparql:wktLiteral"></span>
+<span property="geosparql:asWKT" content="<https://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)" datatype="geosparql:wktLiteral"></span>
       </div>
     </div>
   </div>
@@ -157,7 +157,7 @@ Bijvoorbeeld: plaatsing van tijdelijke sluikstortcamera aan landweg.
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540">
     <span property="eli:title" datatype="xsd:string">2023_CBS_1234 plaatsing van tijdelijke sluikstortcamera aan landweg></span>
       <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/geometrie/1">
-<span property="geosparql:asWKT" content="POINT(3.6865100765135135 51.048086068457195)"" datatype="geosparql:wktLiteral"></span>
+<span property="geosparql:asWKT" content="<https://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)" datatype="geosparql:wktLiteral"></span>
       </div>
     </div>
   </div>
@@ -188,7 +188,7 @@ Note voor ontwikkelaars: de URI kan opgehaald worden via de [basisregister API](
 ```
 <div prefix="perceel: https://data.vlaanderen.be/ns/perceel# besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/ generiek: https://data.vlaanderen.be/ns/generiek#">
 <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
-  <span property="eli:title" datatype="xsd:string">Overwegende dat het college akkoord ging met de locatie voor de PoP-cabine in Drieselken, kadastraal gekend als <span property="dcterms:spatial" resource="https://data.vlaanderen.be/id/perceel/11001B0001-00S000">7de afdeling, sectie A, deel van nummer 892L</span></span>
+  <span property="eli:title" datatype="xsd:string">Overwegende dat het college akkoord ging met de locatie voor de PoP-cabine in Drieselken, kadastraal gekend als <span property="prov:atLocation" resource="https://data.vlaanderen.be/id/perceel/11001B0001-00S000">7de afdeling, sectie A, deel van nummer 892L</span></span>
 </div>
 <div typeof="https://data.vlaanderen.be/ns/perceel#Perceel" resource="https://data.vlaanderen.be/id/perceel/11001B0001-00S000">
 <span property="generiek:lokaleIdentificator" content="11001B0009-00G004""></span>
