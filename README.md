@@ -57,7 +57,7 @@ Bij adressen wordt gebruik gemaakt van [Adresvoorstellingen](https://data.vlaand
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: geografischeDekking (dcterms-spatial)
+    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: geografischeDekking (prov-atLocation)
     Molenstraat_1_adresvoorstelling --> Molenstraat_1_adressenregister: verwijstNaar (adres-verwijstNaar)
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for Molenstraat_1_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1"
@@ -98,9 +98,9 @@ tem
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: geografischeDekking (dcterms-spatial)
-    2023_CBS_08639 --> Molenstraat_2_adresvoorstelling: geografischeDekking (dcterms-spatial)
-    2023_CBS_08639 --> Molenstraat_3_adresvoorstelling: geografischeDekking (dcterms-spatial)
+    2023_CBS_08639 --> Molenstraat_1_adresvoorstelling: geografischeDekking (prov-atLocation)
+    2023_CBS_08639 --> Molenstraat_2_adresvoorstelling: geografischeDekking (prov-atLocation)
+    2023_CBS_08639 --> Molenstraat_3_adresvoorstelling: geografischeDekking (prov-atLocation)
 
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for Molenstraat_1_adresvoorstelling  "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644/adresvoorstelling/1"
@@ -128,7 +128,7 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> evenementenweide: geografischeDekking (dcterms-spatial)
+    2023_CBS_08639 --> evenementenweide: geografischeDekking (prov-atLocation)
     evenementenweide --> evenementenweide_geometrie: geometrie (locn-geometry)
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for evenementenweide "URI: https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1"
@@ -198,7 +198,7 @@ Note voor ontwikkelaars: de URI kan opgehaald worden via de [basisregister API](
 
 ```mermaid
 classDiagram
-    2023_CBS_1234 --> 11001B0001_00S000: geografischeDekking (dcterms-spatial)
+    2023_CBS_1234 --> 11001B0001_00S000: geografischeDekking (prov-atLocation)
     class 2023_CBS_1234 {
           a Besluit (besluit:Besluit)
           titel (eli:title) "Overwegende dat het college akkoord ging"
@@ -425,7 +425,7 @@ RechtOmMetDroneTeVliegen --> Rechtsgrond_2023_CBS_123 : grondslag
 2023_CBS_123 --> Rechtsgrond_2023_CBS_123: realiseert (eli-realizes)
 
 RechtOmMetDroneTeVliegen --> Modaliteit: heeftModaliteit
-Modaliteit --> GrondgebiedStadAalter: geografischeDekking (dcterms-spatial)
+Modaliteit --> GrondgebiedStadAalter: geografischeDekking (prov-atLocation)
 Modaliteit --> 21tot22oktober2023: periode (dcterms-date)
 
 class 2023_CBS_123 {
