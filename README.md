@@ -119,7 +119,7 @@ Om een bepaalde plaats aan te duiden, zoals een wijk of evenementenweide, met ee
     <div property="prov:atLocation" typeof="locn:Location" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1">
       <span property="rdfs:label">evenementenweide van de Blaarmeersen aan de Duiklaan te Gent</span>.
       <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/plaats/1/geometrie/1">
-<span property="geosparql:asWKT" content="<https://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)" datatype="geosparql:wktLiteral"></span>
+<span property="geosparql:asWKT" content="<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)" datatype="geosparql:wktLiteral"></span>
       </div>
     </div>
   </div>
@@ -143,7 +143,7 @@ classDiagram
     }
     class evenementenweide_geometrie {
       a Geometrie (locn:Geometry)
-      wkt (geosparql:asWKT) "POINT(3.6865100765135135 51.048086068457195)"
+      wkt (geosparql:asWKT) "<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)"
     }
 ```
 
@@ -157,7 +157,7 @@ Bijvoorbeeld: plaatsing van tijdelijke sluikstortcamera aan landweg.
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540">
     <span property="eli:title" datatype="xsd:string">2023_CBS_1234 plaatsing van tijdelijke sluikstortcamera aan landweg></span>
       <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/geometrie/1">
-<span property="geosparql:asWKT" content="<https://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)" datatype="geosparql:wktLiteral"></span>
+<span property="geosparql:asWKT" content="<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)" datatype="geosparql:wktLiteral"></span>
       </div>
     </div>
   </div>
@@ -175,7 +175,7 @@ classDiagram
     }
     class evenementenweide_geometrie {
       a Geometrie (locn:Geometry)
-      wkt (geosparql:asWKT) "POINT(3.6865100765135135 51.048086068457195)"
+      wkt (geosparql:asWKT) "<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)"
     }
 ```
 
