@@ -15,14 +15,14 @@ Indien mogelijk proberen we te linken naar een basisregister.
 
 Bijvoorbeeld, een straatnaam kan als volgt gelinkt worden:
 ```
-<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# dcterms: http://purl.org/dc/terms/" property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
-  <span property="eli:title" datatype="xsd:string">2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning voor het verbouwen en uitbreiden van een eengezinswoning  - zonder openbaar onderzoek  - <span property="dcterms:spatial" resource="https://data.vlaanderen.be/id/straatnaam/71082">Molenstraat</span>, 9032 Gent - Vergunning</span>
+<div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# prov: http://www.w3.org/ns/prov#" property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.4481.1644">
+  <span property="eli:title" datatype="xsd:string">2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning voor het verbouwen en uitbreiden van een eengezinswoning  - zonder openbaar onderzoek  - <span property="prov:atLocation" resource="https://data.vlaanderen.be/id/straatnaam/71082">Molenstraat</span>, 9032 Gent - Vergunning</span>
 </div>
 ```
 
 ```mermaid
 classDiagram
-    2023_CBS_08639 --> Molenstraat: geografischeDekking (dcterms-spatial)
+    2023_CBS_08639 --> Molenstraat: geografischeDekking (prov-atLocation)
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for Molenstraat "URI: https://data.vlaanderen.be/id/straatnaam/71082"
     class 2023_CBS_08639 {
