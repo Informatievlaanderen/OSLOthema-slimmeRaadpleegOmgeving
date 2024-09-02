@@ -447,16 +447,21 @@ class LokalePolitie {
  a Agent (foaf:Agent)
 }
 
+class DroneVliegen {
+ a Activiteit (omgevingsvergunning:Activiteit)
+ beschrijving (omgevingsvergunning:beschrijving) "Lokale politie Aalter heeft het recht om tussen 21 en 22 oktober 2023 met een drone te vliegen op het grondgebied van stad Aalter."
+}
+
 2023_CBS_123 --> RechtOmMetDroneTeVliegen: realiseert (eli-realizes)
 
 RechtOmMetDroneTeVliegen --> Activiteit: rechtsobject (omgevingsvergunning-rechtsobject)
-Activiteit --> LokalePolitie: betrokkene (omgevingsvergunning-betrokkene)
-Activiteit --> GrondgebiedStadAalter: locatie (omgevingsvergunning-locatie)
-Activiteit --> 21tot22oktober2023: tijdsbestek (omgevingsvergunning-tijdsbestek)
+DroneVliegen --> LokalePolitie: betrokkene (omgevingsvergunning-betrokkene)
+DroneVliegen --> GrondgebiedStadAalter: locatie (omgevingsvergunning-locatie)
+DroneVliegen --> 21tot22oktober2023: tijdsbestek (omgevingsvergunning-tijdsbestek)
 
 class 2023_CBS_123 {
  a Besluit (besluit:Besluit)
-titel (eli:title) "2023_CBS_123 - Collegebeslissing betreffende de toestemming tot zichtbaar gebruik van een drone"
+ titel (eli:title) "2023_CBS_123 - Collegebeslissing betreffende de toestemming tot zichtbaar gebruik van een drone"
 }
 
 class GrondgebiedStadAalter {
