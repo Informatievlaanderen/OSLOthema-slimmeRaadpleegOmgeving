@@ -488,10 +488,13 @@ class 22oktober2023 {
 ## Ontwerpbesluit
 
 Ontwerpbesluit principieel goedgekeurd op college, ter goedkeuring op gemeenteraad.
-- De behandeling van het agendapunt kan gelinkt worden aan gebruikte document (Stuk) via de relatie gebruikt ([prov:used](http://www.w3.org/ns/prov#used))
-- Het ontwerpbesluit is een stuk, dit kan nog eens extra aangegeven worden via de [dc:type](http://purl.org/dc/terms/type) relatie
+
+- Het college heeft een agendapunt om ontwerpbesluit voor de gemeenteraad principieel goed te keuren. Dit leidt tot een besluit met als bijlage het ontwerpbesluit.
 - Het ontwerpbesluit kan gezien worden als een bijlage bij het besluit dat het ontwerp principieel goedkeurt op het college van burgemeester en schepenen. Voor deze relatie wordt [eli:related_to](http://data.europa.eu/eli/ontology#related_to) gebruikt.
-- De goedkeuring van het ontwerpbesluit op de gemeenteraad geeft aanleiding to ([prov:generated](http://www.w3.org/ns/prov#generated)) tot een besluit. Dit besluit kan gelinkt worden aan het ontwerp via de relatie was gebaseerd op ([prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom)
+- Het ontwerpbesluit is een stuk, dit kan nog eens extra aangegeven worden via de [dc:type](http://purl.org/dc/terms/type) relatie
+- De gemeenteraad heeft een agendapunt om het ontwerpbesluit goed te keuren. De goedkeuring van het ontwerpbesluit op de gemeenteraad geeft aanleiding ([prov:generated](http://www.w3.org/ns/prov#generated)) tot een besluit.
+- Dit besluit kan gelinkt worden aan het ontwerp via de relatie was gebaseerd op ([prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom)).
+- De behandeling van het agendapunt "gebruikte" ([prov:used](http://www.w3.org/ns/prov#used)) het ontwerpbesluit als input.
 
 ```mermaid
 classDiagram
@@ -541,7 +544,7 @@ Zitting_2020_10_20 --> Agendapunt_2020_GR_02870: behandelt (besluit-behandelt)
 Zitting_2020_09_20 --> Agendapunt_2020_CBS_02870: behandelt (besluit-behandelt)
 Behandeling_2020_GR_02870 --> Agendapunt_2020_GR_02870: heeftOnderwerp (dc-subject)
 Behandeling_2020_CBS_02870 --> Agendapunt_2020_CBS_02870: heeftOnderwerp (dc-subject)
-Behandeling_2020_GR_02870 --> OntwerpBesluit_0001_AA: gebruikt (prov-used)
+Behandeling_2020_GR_02870 --> OntwerpBesluit_0001_AA: gebruikte (prov-used)
 Behandeling_2020_GR_02870 --> Besluit_2020_GR_02870: geeft aanleiding tot (prov-generated)
 Behandeling_2020_CBS_02870 --> Besluit_2020_CB_02870: geeft aanleiding tot (prov-generated)
 Besluit_2020_CB_02870 --> OntwerpBesluit_0001_AA: heeft bijlage (eli-related_to)
