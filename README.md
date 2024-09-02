@@ -384,7 +384,7 @@ classDiagram
     }
 ```
 
-## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
+## besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
 
 Dankzij het applicatieprofiel slimme raadpleegomgeving kunnen besturen hun besluiten linken aan locaties zoals gedefinieerd in [Locatie-gebaseerde informatie](#locatie-gebaseerde-informatie). Voor deze use case gaan we er van uit dat het besluit rechstreeks wordt gelinkt aan de locatie, bv:
 ```html
