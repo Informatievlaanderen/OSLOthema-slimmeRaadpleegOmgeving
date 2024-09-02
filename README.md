@@ -393,7 +393,7 @@ dit resulteert in volgende geannoteerde html:
 ```html
 <div class="say-editable" about="http://data.lblod.info/id/besluiten/4f3b371f-dcc2-4de7-9bb9-62c2cf37ddb6" typeof="http://data.vlaanderen.be/ns/besluit#Besluit">
   <span resource="https://publicatie.gelinkt-notuleren.vlaanderen.be/id/plaats/3c876c1c-628f-4535-a73f-ce1f3783f669" typeof="http://www.w3.org/ns/locn#Location" property="prov:atLocation">
-    <span property="http://www.w3.org/2000/01/rdf-schema#label">test</span><span property="http://www.w3.org/ns/locn#geometry" resource="https://publicatie.gelinkt-notuleren.vlaanderen.be/id/geometrie/d0d9d9b3-1d94-48b3-9bfc-166e0e0c23e0" typeof="http://www.w3.org/ns/locn#Geometry">
+    <span property="http://www.w3.org/2000/01/rdf-schema#label">ingang parking kerkhoflaan</span><span property="http://www.w3.org/ns/locn#geometry" resource="https://publicatie.gelinkt-notuleren.vlaanderen.be/id/geometrie/d0d9d9b3-1d94-48b3-9bfc-166e0e0c23e0" typeof="http://www.w3.org/ns/locn#Geometry">
       <span property="http://www.opengis.net/ont/geosparql#asWKT" datatype="http://www.opengis.net/ont/geosparql#wktLiteral" content="<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)"></span>
     </span>
   </span>
