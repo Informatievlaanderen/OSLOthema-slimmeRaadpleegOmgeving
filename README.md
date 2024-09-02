@@ -454,7 +454,7 @@ class DroneVliegen {
 
 2023_CBS_123 --> RechtOmMetDroneTeVliegen: realiseert (eli-realizes)
 
-RechtOmMetDroneTeVliegen --> Activiteit: rechtsobject (omgevingsvergunning-rechtsobject)
+RechtOmMetDroneTeVliegen --> DroneVliegen: rechtsobject (omgevingsvergunning-rechtsobject)
 DroneVliegen --> LokalePolitie: betrokkene (omgevingsvergunning-betrokkene)
 DroneVliegen --> GrondgebiedStadAalter: locatie (omgevingsvergunning-locatie)
 DroneVliegen --> 21tot22oktober2023: tijdsbestek (omgevingsvergunning-tijdsbestek)
