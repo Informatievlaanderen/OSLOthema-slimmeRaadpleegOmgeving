@@ -424,6 +424,7 @@ class LokalePolitie {
 2023_CBS_123 --> RechtOmMetDroneTeVliegen: realiseert (eli-realizes)
 
 RechtOmMetDroneTeVliegen --> Activiteit: rechtsobject (omgevingsvergunning-rechtsobject)
+Activiteit --> LokalePolitie: betrokkene (omgevingsvergunning-betrokkene)
 Activiteit --> GrondgebiedStadAalter: locatie (omgevingsvergunning-locatie)
 Activiteit --> 21tot22oktober2023: tijdsbestek (omgevingsvergunning-tijdsbestek)
 
