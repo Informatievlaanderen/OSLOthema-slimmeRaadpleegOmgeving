@@ -329,6 +329,7 @@ We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.
 
 * de behandeling van agendapunt wordt gelinkt met `prov:generated` met 2 besluiten: het wijzigingsbesluit + gecoördineerde reglement
 * Het gecoördineerde reglement krijgt een type `gecoördineerd reglement` (work in progress om dit toe te voegen)
+* Het gecoördineerde reglement *consolideert* de vorige versie van het gecoördineerde reglement en zijn wijzigingsbesluiten
 * Uitbreiding: naast het linken van de 2 besluiten met `eli:related` en `dcterms:isPartOf`, wordt ook `eli:consolidates` en `eli:consolidated_by` gebruikt
 
 Nota:
@@ -340,7 +341,7 @@ Nota:
   <div typeof="besluit:BehandelingVanAgendapunt" resource="https://data.aalter.be/id/behandelingen-van-agendapunten/23.1010.7267.2954">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.aalter.be/id/besluiten/23.1010.7267.2954">
     <span property="eli:title" datatype="xsd:string">2023_CBS_02161 - Collegebeslissing betreffende de wijziging van het arbeidsreglement van het deeltijds kunstonderwijs</span>
-    <span property="eli:related eli:consolidates" rev="dcterms:isPartOf eli:consolidated_by" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B" typeof="besluit:Besluit"></span>
+    <span property="eli:related eli:consolidated_by" rev="dcterms:isPartOf eli:consolidates" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B" typeof="besluit:Besluit"></span>
   </div>
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B">
       <span property="rdf:type" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"></span>
@@ -359,9 +360,9 @@ classDiagram
     BehandelingVanAgendapunt --> Wijzigingsbesluit: geeftAanleidingTot (prov-generated)
     BehandelingVanAgendapunt --> GecoördineerdReglement: geeftAanleidingTot (prov-generated)
     Wijzigingsbesluit --> GecoördineerdReglement: gerelateerdAan (eli-related)
-    Wijzigingsbesluit --> GecoördineerdReglement: consolideert (eli-consolidates)
+    Wijzigingsbesluit --> GecoördineerdReglement: isGeconsolideerdDoor (eli-consolidated-by)
     GecoördineerdReglement --> Wijzigingsbesluit: isDeelVan (dcterms-isPartOf)
-    GecoördineerdReglement --> Wijzigingsbesluit: isGeconsolideerdDoor (eli-consolidated-by)
+    GecoördineerdReglement --> Wijzigingsbesluit: consolideert (eli-consolidates)
 
     GecoördineerdReglement --> ArbeidsreglementRechtsgrond: realiseert
     class ArbeidsreglementRechtsgrond {
