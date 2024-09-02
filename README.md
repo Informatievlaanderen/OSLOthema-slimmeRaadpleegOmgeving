@@ -386,7 +386,33 @@ classDiagram
 
 ## Proof of concept: besluiten in mijn directe leefomgeving, de school van mijn kinderen, de buurt waar ik dikwijls vertoef, de leefomgeving van een familielid, de omgeving van een pand dat in mijn bezit is, een traject waar ik dikwijls langs rijd, …)
 
-Idee: met GeoSPARQL kunnen besluiten in een bepaalde polygoon bevraagd worden
+Dankzij het applicatieprofiel slimme raadpleegomgeving kunnen besturen hun besluiten linken aan locaties zoals gedefinieerd in [Locatie-gebaseerde informatie](#locatie-gebaseerde-informatie). Voor deze use case gaan we er van uit dat het besluit rechstreeks wordt gelinkt aan de locatie, bv:
+```html
+<div class="say-editable" about="http://data.lblod.info/id/besluiten/4f3b371f-dcc2-4de7-9bb9-62c2cf37ddb6" typeof="http://data.vlaanderen.be/ns/besluit#Besluit">
+  <span resource="https://publicatie.gelinkt-notuleren.vlaanderen.be/id/plaats/3c876c1c-628f-4535-a73f-ce1f3783f669" typeof="http://www.w3.org/ns/locn#Location" property="prov:atLocation">
+    <span property="http://www.w3.org/2000/01/rdf-schema#label">test</span><span property="http://www.w3.org/ns/locn#geometry" resource="https://publicatie.gelinkt-notuleren.vlaanderen.be/id/geometrie/d0d9d9b3-1d94-48b3-9bfc-166e0e0c23e0" typeof="http://www.w3.org/ns/locn#Geometry">
+      <span property="http://www.opengis.net/ont/geosparql#asWKT" datatype="http://www.opengis.net/ont/geosparql#wktLiteral" content="<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)"></span>
+    </span>
+  </span>
+</div>
+```
+
+Het is dan mogelijk om aan de hand van een GeoSPARQL relevante besluiten voor een bepaalde buurt te vinden:
+
+```sparql
+PREFIX besluit: <http://example.org/besluit#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX geosparql: <http://www.opengis.net/ont/geosparql#>
+<http://www.opengis.net/def/crs/EPSG/0/31370>
+SELECT ?besluit ?wkt
+WHERE {
+  ?besluit a besluit:Besluit .
+  ?besluit prov:atLocation/prov:geometry/geosparql:asWKT ?wkt .
+  BIND("<http://www.opengis.net/def/crs/EPSG/0/31370> POLYGON((x1 y1, x2 y2, x3 y3, x4 y4, x1 y1))"^^geosparql:wktLiteral AS ?polygon) .
+  # Check if the point is within the polygon
+  FILTER(geosparql:sfWithin(?wkt, ?polygon)) .
+}
+```
 
 ## Zoeken adhv woorden in besluiten
 
