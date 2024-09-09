@@ -558,7 +558,7 @@ class GebruikersBevragingResultaten {
 }
 
 class Behandeling_2020_GR_02870 {
-    a Agendapunt (besluit:BehandelingVanAgendapunt)
+    a BehandelingVanAgendapunt (besluit:BehandelingVanAgendapunt)
     https://data.aalter.be/id/agendapunten/20.0916.0344.5988
 }
 
