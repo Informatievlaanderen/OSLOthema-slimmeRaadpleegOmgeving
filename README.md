@@ -209,23 +209,6 @@ classDiagram
     }
 ```
 
-### Besluit als input voor besluit
-
-* Wordt toegevoegd voor de vierde workshop *
-
-Principe besluit Gzg
-
-Definitieve beslissing GzG
-
-Besluit van gebruikersbevraging -> koppelt terug -> koppelt terug
-
-    - Besluit als input voor nieuw besluit
-    - Wat met gebruikersbevraging?
-
-    - Amends, changes…
-
-Van college naar gemeenteraad over eenzelfde besluit, is maar 1 besluit…
-
 ## Thema's
 
 ### Linken aan een thema
@@ -552,6 +535,41 @@ Behandeling_2020_GR_02870 --> Besluit_2020_GR_02870: geeft aanleiding tot (prov-
 Behandeling_2020_CBS_02870 --> Besluit_2020_CB_02870: geeft aanleiding tot (prov-generated)
 Besluit_2020_CB_02870 --> OntwerpBesluit_0001_AA: heeft bijlage (eli-related_to)
 Besluit_2020_GR_02870 --> OntwerpBesluit_0001_AA: is gebaseerd op (prov-wasDerivedFrom)
+```
+
+### Stuk (bv Gebruikersbevraging) als input voor besluit
+We zoomen hier nog even in op het gebruik van stukken als input voor een besluit. De relaties in dit voorbeeld worden ook gebruikt in de use case [Ontwerpbesluit](#Ontwerpbesluit), maar kunnen voor elk type stuk gebruikt worden.
+Als een besluit wordt gemotiveerd door ondersteunende stukken kunnen deze worden gelinkt via de relatie [`gebruikte`](http://www.w3.org/ns/prov#used). Daarnaast kunnen legislatieve activiteiten aan elkaar gelinkt worden via de relatie [`wasGemotiveerdDoor`](http://data.europa.eu/eli/eli-draft-legislation-ontology#was_motivated_by).
+In het voorbeeld hieronder worden de resultaten van een gebruikersbevraging gebruikt in de gemeenteraad om een besluit te motiveren.
+
+
+
+```mermaid
+classDiagram
+
+class GebruikersBevragingActiviteit {
+    <https://data.aalter.be/id/activiteiten/92bd7458-6939-47f7-a96d-50e23fcd8338>
+    a Activiteit (prov:Activity)
+    titel: gebruikers bevraging
+}
+class GebruikersBevragingResultaten {
+    <https://data.aalter.be/id/stuk/92bd7458-6939-47f7-a96d-50e23fcd83389>
+    a Stuk (dossier:Stuk)
+}
+
+class Behandeling_2020_GR_02870 {
+    a Agendapunt (besluit:BehandelingVanAgendapunt)
+    https://data.aalter.be/id/agendapunten/20.0916.0344.5988
+}
+
+class Besluit_2020_GR_02870 {
+    a Besluit (besluit:Besluit)
+
+}
+
+GebruikersBevragingActiviteit --> GebruikersBevragingResultaten: genereert (prov-generated)
+Behandeling_2020_GR_02870 --> GebruikersBevragingResultaten: gebruikt (prov-used)
+Behandeling_2020_GR_02870 --> Besluit_2020_GR_02870: genereert (prov-generated)
 ```
 
 ## Initiatiefrecht
