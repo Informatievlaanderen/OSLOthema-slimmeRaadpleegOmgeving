@@ -862,6 +862,34 @@ classDiagram
     </div>
 ```
 
+
+## Annotaties
+
+### Besluit annoteren met resource (locatie)
+
+```mermaid
+classDiagram
+    Annotatie_2023_CBS_08639_3794238_1 --> 2023_CBS_08639: gaatOver (oa-hasBody)
+    Annotatie_2023_CBS_08639_3794238_1 --> Molenstraat_1_adressenregister: heeftLocatie (oa-hasTarget)
+
+    note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
+    note for Molenstraat_1_adressenregister "URI: https://data.vlaanderen.be/id/adres/3794238"
+    class 2023_CBS_08639 {
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
+    }
+    note for Annotatie_2023_CBS_08639_3794238_1 "URI: https://data.gent.be/id/annotaties/23.0829.4481.1644/3794238/1"
+    class Annotatie_2023_CBS_08639_3794238_1 {
+      a Annotatie (oa:Annotation)
+    }
+  
+```
+
+
+### SHACL-path selector
+
+
+
 ## Administrative information
 
 **_Editors:_**
