@@ -867,10 +867,13 @@ classDiagram
 
 ### Besluit annoteren met resource (locatie)
 
+In dit voorbeeld annoteren we een besluit met het adres Molenstraat 1, Gent.
+De annotatie gaat over het besluit en heeft het adres als "body".
+
 ```mermaid
 classDiagram
-    Annotatie_2023_CBS_08639_3794238_1 --> 2023_CBS_08639: gaatOver (oa-hasBody)
-    Annotatie_2023_CBS_08639_3794238_1 --> Molenstraat_1_adressenregister: heeftLocatie (oa-hasTarget)
+    Annotatie_2023_CBS_08639_3794238_1 --> 2023_CBS_08639: gaatOver (oa-hasTarget)
+    Annotatie_2023_CBS_08639_3794238_1 --> Molenstraat_1_adressenregister: heeftLocatie (oa-hasBody)
 
     note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
     note for Molenstraat_1_adressenregister "URI: https://data.vlaanderen.be/id/adres/3794238"
@@ -882,12 +885,103 @@ classDiagram
     class Annotatie_2023_CBS_08639_3794238_1 {
       a Annotatie (oa:Annotation)
     }
-  
+
+    class Molenstraat_1_adressenregister {
+      a Adres (adres:Adres)
+    }
 ```
 
+### Tekstpositieselector
 
-### SHACL-path selector
+Om te kunnen weten waar het adres exact voorkomt in het besluit moeten we dit stuk in de tekst van het besluit kunnen afbakenen.
+Hiervoor kan een tekstpositieselector gebruikt worden dat een stuk tekst afbakent met "start" en "einde".
+In ons voorbeeld voegen we een ResourceOnderdeel toe dat refereert naar het besluit en de selector. 
 
+```mermaid
+classDiagram
+    Annotatie_2023_CBS_08639_3794238_1 --> 2023_CBS_08639_adres_onderdeel: gaatOver (oa-hasTarget)
+    Annotatie_2023_CBS_08639_3794238_1 --> Molenstraat_1_adressenregister: heeftLocatie (oa-hasBody)
+    2023_CBS_08639_adres_onderdeel --> 2023_CBS_08639: isOnderdeelVan (oa-hasSource)
+    2023_CBS_08639_adres_onderdeel --> 2023_CBS_08639_tekstpositieselector: heeftSelector (oa-hasSelector)
+
+    note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
+    note for Molenstraat_1_adressenregister "URI: https://data.vlaanderen.be/id/adres/3794238"
+    class 2023_CBS_08639 {
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
+    }
+    note for Annotatie_2023_CBS_08639_3794238_1 "URI: https://data.gent.be/id/annotaties/23.0829.4481.1644/3794238/1"
+    class Annotatie_2023_CBS_08639_3794238_1 {
+      a Annotatie (oa:Annotation)
+    }
+
+    class Molenstraat_1_adressenregister {
+      a Adres (adres:Adres)
+    }
+
+    note for 2023_CBS_08639_adres_onderdeel "URI: https://data.gent.be/id/besluitonderdeel/23.0829.4481.1644/tekstpositie/20/50"
+    class 2023_CBS_08639_adres_onderdeel {
+      a ResourceOnderdeel (oa:SpecificResource)
+      label (rdfs:label) "Onderdeel van besluit 2023_CBS_08639 waar adres Schoolstraat 1, Gent staat vermeld."
+    }
+
+    class 2023_CBS_08639_tekstpositieselector {
+      a TekstPositieSelector (oa:TextPositionSelector)
+      start (oa:start) "20"
+      eind (oa:end) "50"
+    }
+```
+
+### SHACLpathselector
+
+Een besluit heeft meerdere eigenschappen waar tekst in staat, bijvoorbeeld de titel, beschrijving, motivering en inhoud.
+De Tekstpositieselector laat niet toe om te specifiëren welke tekst-eigenschap gebruikt wordt.
+Hiervoor gebruiken we de SHACLpathselector dat dient als een verfijning van de Tekstpositieselector om de ResourceOnderdeel nog duidelijker af te bakenen.
+
+In het voorbeeld voegen we een "verfijndDoor" relatie toe van de Tekstpositieselector naar de Shaclpathselector. 
+Zo beschrijven we dat de Tekstpositieselector toegepast moet worden op de inhoud-eigenschap van het besluit.
+Meer info over SHACL property paths kan in de [SHACL specificatie](https://www.w3.org/TR/shacl/#property-paths) gevonden worden.
+
+```mermaid
+classDiagram
+    Annotatie_2023_CBS_08639_3794238_1 --> 2023_CBS_08639_adres_onderdeel: gaatOver (oa-hasTarget)
+    Annotatie_2023_CBS_08639_3794238_1 --> Molenstraat_1_adressenregister: heeftLocatie (oa-hasBody)
+    2023_CBS_08639_adres_onderdeel --> 2023_CBS_08639: isOnderdeelVan (oa-hasSource)
+    2023_CBS_08639_adres_onderdeel --> 2023_CBS_08639_tekstpositieselector: heeftSelector (oa-hasSelector)
+    2023_CBS_08639_tekstpositieselector --> 2023_CBS_08639_inhoud_shaclpathselector: verfijndDoor (oa-refinedBy)
+
+    note for 2023_CBS_08639 "URI: https://data.gent.be/id/besluiten/23.0829.4481.1644"
+    note for Molenstraat_1_adressenregister "URI: https://data.vlaanderen.be/id/adres/3794238"
+    class 2023_CBS_08639 {
+      a Besluit (besluit:Besluit)
+      titel (eli:title) "2023_CBS_08639 - OMV_2023072621 R - aanvraag omgevingsvergunning..."
+    }
+    note for Annotatie_2023_CBS_08639_3794238_1 "URI: https://data.gent.be/id/annotaties/23.0829.4481.1644/3794238/1"
+    class Annotatie_2023_CBS_08639_3794238_1 {
+      a Annotatie (oa:Annotation)
+    }
+
+    class Molenstraat_1_adressenregister {
+      a Adres (adres:Adres)
+    }
+
+    note for 2023_CBS_08639_adres_onderdeel "URI: https://data.gent.be/id/besluitonderdeel/23.0829.4481.1644/tekstpositie/20/50"
+    class 2023_CBS_08639_adres_onderdeel {
+      a ResourceOnderdeel (oa:SpecificResource)
+      label (rdfs:label) "Onderdeel van besluit 2023_CBS_08639 waar adres Schoolstraat 1, Gent staat vermeld."
+    }
+
+    class 2023_CBS_08639_tekstpositieselector {
+      a TekstPositieSelector (oa:TextPositionSelector)
+      start (oa:start) "20"
+      eind (oa:end) "50"
+    }
+
+    class 2023_CBS_08639_inhoud_shaclpathselector {
+      a ShaclPathSelector (sro:ShaclPathSelector)
+      waarde (rdf:value) "http://www.w3.org/ns/prov#value"
+    }
+```
 
 
 ## Administrative information
