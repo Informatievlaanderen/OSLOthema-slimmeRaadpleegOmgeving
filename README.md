@@ -150,14 +150,15 @@ classDiagram
 ### Enkel coördinaten
 
 Om enkel coördinaten te linken met het besluit, dient nog altijd met Geometrie gewerkt te worden.
-Bijvoorbeeld: plaatsing van tijdelijke sluikstortcamera aan landweg.
+Bijvoorbeeld: plaatsing van tijdelijke sluikstortcamera aan marktplein.
+Dit voorbeeld toont het gebruik van een polygoon, maar [andere geometrieën](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry) zijn ook mogelijk (linestring, multipolygon...)
 
 ```html
 <div prefix="besluit: http://data.vlaanderen.be/ns/besluit# eli: http://data.europa.eu/eli/ontology# prov: http://www.w3.org/ns/prov# adres: https://data.vlaanderen.be/ns/adres# locn: http://www.w3.org/ns/locn# rdfs: http://www.w3.org/2000/01/rdf-schema# geosparql: http://www.opengis.net/ont/geosparql#">
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540">
     <span property="eli:title" datatype="xsd:string">2023_CBS_1234 plaatsing van tijdelijke sluikstortcamera aan landweg></span>
       <div property="locn:geometry" typeof="locn:Geometry" resource="https://data.gent.be/id/besluiten/23.0829.9225.8540/geometrie/1">
-<span property="geosparql:asWKT" content="<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)" datatype="geosparql:wktLiteral"></span>
+<span property="geosparql:asWKT" content="<http://www.opengis.net/def/crs/EPSG/0/31370> POLYGON((3.856893014162779 50.92072191700282,3.8592103589326143 50.92070395170313,3.8592243567109112 50.9201614492234,3.857114547863603 50.92035642746691,3.856893014162779 50.92072191700282))" datatype="geosparql:wktLiteral"></span>
       </div>
     </div>
   </div>
@@ -175,7 +176,7 @@ classDiagram
     }
     class evenementenweide_geometrie {
       a Geometrie (locn:Geometry)
-      wkt (geosparql:asWKT) "<http://www.opengis.net/def/crs/EPSG/0/31370> POINT(126306.58208223493 179948.9735279791)"
+      wkt (geosparql:asWKT) "<http://www.opengis.net/def/crs/EPSG/0/31370> POLYGON((3.856893014162779 50.92072191700282,3.8592103589326143 50.92070395170313,3.8592243567109112 50.9201614492234,3.857114547863603 50.92035642746691,3.856893014162779 50.92072191700282))"
     }
 ```
 
