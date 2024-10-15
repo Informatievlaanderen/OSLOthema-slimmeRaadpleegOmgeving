@@ -7,244 +7,244 @@
 <https://data.vlaanderen.be/id/concept/BesluitThema/30584583-800a-4c37-8ef8-e85140cc471a> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "30584583-800a-4c37-8ef8-e85140cc471a" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Cultuur en vrije tijd."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Cultuur en vrije tijd"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cultuur en vrije tijd."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cultuur en vrije tijd"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/f72f9034-23b3-47a0-b983-3de3bade0f28> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "f72f9034-23b3-47a0-b983-3de3bade0f28" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Culturele instellingen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Culturele instellingen"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/30584583-800a-4c37-8ef8-e85140cc471a> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Culturele instellingen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Culturele instellingen"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/de069524-90e5-4b35-b68e-ede03c19911e> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "de069524-90e5-4b35-b68e-ede03c19911e" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Evenementen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Evenementen"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/30584583-800a-4c37-8ef8-e85140cc471a> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Evenementen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Evenementen"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/ddd9e5df-c74d-43c1-ad01-2b627ab2d303> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "ddd9e5df-c74d-43c1-ad01-2b627ab2d303" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Erfgoed."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Erfgoed"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/30584583-800a-4c37-8ef8-e85140cc471a> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Erfgoed."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Erfgoed"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/5371a595-83ce-4af8-a973-81a0dd8a5fdc> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "5371a595-83ce-4af8-a973-81a0dd8a5fdc" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Kunst- en cultuurbeleid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Kunst- en cultuurbeleid"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/30584583-800a-4c37-8ef8-e85140cc471a> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Kunst- en cultuurbeleid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Kunst- en cultuurbeleid"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/3f3fe0fd-7b5c-4fbf-b6cd-c4830666b02b> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "3f3fe0fd-7b5c-4fbf-b6cd-c4830666b02b" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Erediensten."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Erediensten"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/30584583-800a-4c37-8ef8-e85140cc471a> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Erediensten."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Erediensten"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/d8baf1ad-bb74-4c5b-8d8d-078769ff015f> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "d8baf1ad-bb74-4c5b-8d8d-078769ff015f" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Sport."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Sport"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/30584583-800a-4c37-8ef8-e85140cc471a> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Sport."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Sport"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/a1998c05-b14b-4323-bda6-cfc73ca5a48b> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "a1998c05-b14b-4323-bda6-cfc73ca5a48b" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Wonen en ruimtelijke ordening."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Wonen en ruimtelijke ordening"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Wonen en ruimtelijke ordening."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Wonen en ruimtelijke ordening"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/1080601b-b003-4096-aa29-05c32a62a095> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "1080601b-b003-4096-aa29-05c32a62a095" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Mobiliteit."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Mobiliteit"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Mobiliteit."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Mobiliteit"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/8c1ba687-7121-4d34-8019-a87d039e75bf> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "8c1ba687-7121-4d34-8019-a87d039e75bf" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Verkeersveiligheid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Verkeersveiligheid"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/1080601b-b003-4096-aa29-05c32a62a095> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Verkeersveiligheid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Verkeersveiligheid"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/55ecf65e-e224-46e1-95eb-f4bddd24f070> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "55ecf65e-e224-46e1-95eb-f4bddd24f070" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Veiligheid in de samenleving."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Veiligheid in de samenleving"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/d3ac0522-9a25-42fa-a458-23fc3ec830ee> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Veiligheid in de samenleving."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Veiligheid in de samenleving"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/251e843a-522d-4c64-ad67-8dec54041e37> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "251e843a-522d-4c64-ad67-8dec54041e37" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Algemeen bestuur en financiën."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Algemeen bestuur en financiën"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Algemeen bestuur en financiën."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Algemeen bestuur en financiën"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/ab7f27bb-c039-4e3b-ac03-653e7e21bea6> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "ab7f27bb-c039-4e3b-ac03-653e7e21bea6" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Algemeen bestuur."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Algemeen bestuur"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/251e843a-522d-4c64-ad67-8dec54041e37> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Algemeen bestuur."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Algemeen bestuur"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/2f736f3c-9328-4c72-9a78-9c6090d90c9f> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "2f736f3c-9328-4c72-9a78-9c6090d90c9f" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Algemene financiën."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Algemene financiën"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader> <https://data.vlaanderen.be/id/concept/BesluitThema/251e843a-522d-4c64-ad67-8dec54041e37> ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Algemene financiën."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Algemene financiën"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/0e627234-6ea7-41b7-98a2-fbc56afa0b86> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "0e627234-6ea7-41b7-98a2-fbc56afa0b86" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Zorg en gezondheid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Zorg en gezondheid"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Zorg en gezondheid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Zorg en gezondheid"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/0e1a7dba-5713-4b23-b81a-a9f645ad4a73> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "0e1a7dba-5713-4b23-b81a-a9f645ad4a73" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Opvang."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Opvang"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/0e627234-6ea7-41b7-98a2-fbc56afa0b86> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Opvang."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Opvang"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/2d477130-7e2e-499a-b18d-7e682b767fb9> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "2d477130-7e2e-499a-b18d-7e682b767fb9" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Ondernemen en werken."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Ondernemen en werken"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Ondernemen en werken."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Ondernemen en werken"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/23bcd768-f9a4-49a0-9844-687438212239> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "23bcd768-f9a4-49a0-9844-687438212239" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Ondernemen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Ondernemen"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/b8299662-7613-41cd-9072-b10ded6a7863> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Ondernemen."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Ondernemen"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/dee3d958-cac6-4384-9ab5-35aaafe2a771>
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "dee3d958-cac6-4384-9ab5-35aaafe2a771" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Werk."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Werk"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/2d477130-7e2e-499a-b18d-7e682b767fb9> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Werk."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Werk"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/560999db-1fbd-4312-8992-87e3abfe18c0> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "560999db-1fbd-4312-8992-87e3abfe18c0" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Vacatures."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Vacatures"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/2d477130-7e2e-499a-b18d-7e682b767fb9> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Vacatures."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Vacatures"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/5feb178f-d55f-41fc-be62-baf9854f9ca1> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "5feb178f-d55f-41fc-be62-baf9854f9ca1" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Klimaat, Milieu en Natuur."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Klimaat, Milieu en Natuur"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/a1998c05-b14b-4323-bda6-cfc73ca5a48b> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Klimaat, Milieu en Natuur."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Klimaat, Milieu en Natuur"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/b8299662-7613-41cd-9072-b10ded6a7863> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "b8299662-7613-41cd-9072-b10ded6a7863" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroepenbeleid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Doelgroepenbeleid"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Doelgroepenbeleid."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Doelgroepenbeleid"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/24791983-85a9-4819-b6b7-03a876d36e8c> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "24791983-85a9-4819-b6b7-03a876d36e8c" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Jeugd."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Jeugd"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/b8299662-7613-41cd-9072-b10ded6a7863> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Jeugd."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Jeugd"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/98333ef6-cc6a-47a8-b236-7391d9cc15e6> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "98333ef6-cc6a-47a8-b236-7391d9cc15e6" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Senioren."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Senioren"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/b8299662-7613-41cd-9072-b10ded6a7863> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Senioren."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Senioren"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/d3ac0522-9a25-42fa-a458-23fc3ec830ee> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "d3ac0522-9a25-42fa-a458-23fc3ec830ee" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Samenleven en diversiteit."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Samenleven en diversiteit"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Samenleven en diversiteit."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Samenleven en diversiteit"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
 
 <https://data.vlaanderen.be/id/concept/BesluitThema/895b6db7-b7c2-41e6-ba63-e82cc20c38d6> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "895b6db7-b7c2-41e6-ba63-e82cc20c38d6" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Armoede."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Armoede"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/b8299662-7613-41cd-9072-b10ded6a7863> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Armoede."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Armoede"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/1cb4ffad-7e26-49d5-9b1f-13c5c82fc03a> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "1cb4ffad-7e26-49d5-9b1f-13c5c82fc03a" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Integratie."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Integratie"@nl ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/b8299662-7613-41cd-9072-b10ded6a7863> ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/0e627234-6ea7-41b7-98a2-fbc56afa0b86> ;
     <http://www.w3.org/2004/02/skos/core#broader>  <https://data.vlaanderen.be/id/concept/BesluitThema/d3ac0522-9a25-42fa-a458-23fc3ec830ee> ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Integratie."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Integratie"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
     
 <https://data.vlaanderen.be/id/concept/BesluitThema/f90a54fc-72f3-49c9-a1ed-e0c564f51cd7> 
     <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> ;
     <http://mu.semte.ch/vocabularies/core/uuid> "f90a54fc-72f3-49c9-a1ed-e0c564f51cd7" ;
-    <http://www.w3.org/2004/02/skos/core#definition> "Bevolking en burgerlijke stand."@nl ;
+    <http://www.w3.org/2004/02/skos/core#definition> "Bevolking en burgerlijke stand"@nl ;
     <http://www.w3.org/2004/02/skos/core#inScheme>  <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> ;
-    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Bevolking en burgerlijke stand."@nl ;
+    <http://www.w3.org/2004/02/skos/core#prefLabel>  "Bevolking en burgerlijke stand"@nl ;
     <http://www.w3.org/2004/02/skos/core#topConceptOf> <https://data.vlaanderen.be/id/conceptscheme/BesluitThema> .
