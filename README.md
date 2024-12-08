@@ -317,7 +317,7 @@ We volgen hiervoor de documentatie op de [vendor pagina's](https://lblod.github.
 * Uitbreiding: naast het linken van de 2 besluiten met `eli:related` en `dcterms:isPartOf`, wordt ook `eli:consolidates` en `eli:consolidated_by` gebruikt
 
 Nota:
-* het reglement zou een rechtsgrond URI moeten hebben dat niet veranderd over de tijd en gebruikt kan worden om alle versies te bundelen
+* het reglement zou een rechtsgrond URI moeten hebben dat niet verandert over de tijd en gebruikt kan worden om alle versies te bundelen
 * telkens een nieuwe versie van het gecoördineerde reglement gemaakt wordt, dient een nieuwe URI (URL) aangemaakt te worden voor de specifieke versie
 
 ```html
