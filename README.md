@@ -50,7 +50,7 @@ Bij adressen wordt gebruik gemaakt van [Adresvoorstellingen](https://data.vlaand
 <span property="adres:gemeentenaam" content="Gent" language="nl"></span>
 <span property="locn:postcode" content="9000"></span>
 <span property="locn:thoroughfare" content="Molenstraat"></span>
-<span property="adres:verwijstNaar" content="https://data.vlaanderen.be/id/adres/3794238"></span>
+<span property="adres:verwijstNaar" resource="https://data.vlaanderen.be/id/adres/3794238"></span>
 </div>
 </div>
 ```
