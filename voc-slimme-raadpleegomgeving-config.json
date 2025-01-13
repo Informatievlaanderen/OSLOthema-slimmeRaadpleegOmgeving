@@ -2,7 +2,7 @@
   "title": "Vocabularium Slimme Raadpleegomgeving",
   "category": "Vocabularium",
   "usage": "Aanbevolen (vrijwillig)",
-  "status": "kandidaat-standaard",
+  "status": "erkende-standaard",
   "descriptionFileName": "voc-slimme-raadpleegomgeving-config.md",
   "responsibleOrganisation": [
     {
@@ -73,7 +73,7 @@
   ],
   "dateOfRegistration": "2023-11-07",
   "dateOfAcknowledgementByWorkingGroup": "2024-02-12",
-  "dateOfAcknowledgementBySteeringCommittee": "TBD",
+  "dateOfAcknowledgementBySteeringCommittee": "2024-12-05",
   "repository": "OSLOthema-slimmeRaadpleegOmgeving",
   "datePublicReviewStart": "",
   "endOfPublicationDate": ""
