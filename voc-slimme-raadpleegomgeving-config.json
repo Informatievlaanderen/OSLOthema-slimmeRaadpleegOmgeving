@@ -2,7 +2,7 @@
   "title": "Vocabularium Slimme Raadpleegomgeving",
   "category": "Vocabularium",
   "usage": "Aanbevolen (vrijwillig)",
-  "status": "erkende-standaard",
+  "status": "https://data.vlaanderen.be/id/concept/StandaardStatus/ErkendeStandaard",
   "descriptionFileName": "voc-slimme-raadpleegomgeving-config.md",
   "responsibleOrganisation": [
     {
