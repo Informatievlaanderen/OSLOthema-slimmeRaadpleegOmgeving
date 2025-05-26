@@ -50,7 +50,7 @@ Bij adressen wordt gebruik gemaakt van [Adresvoorstellingen](https://data.vlaand
 <span property="adres:gemeentenaam" content="Gent" language="nl"></span>
 <span property="locn:postcode" content="9000"></span>
 <span property="locn:thoroughfare" content="Molenstraat"></span>
-<span property="adres:verwijstNaar" content="https://data.vlaanderen.be/id/adres/3794238"></span>
+<span property="adres:verwijstNaar" resource="https://data.vlaanderen.be/id/adres/3794238"></span>
 </div>
 </div>
 ```
@@ -328,14 +328,13 @@ Nota:
     <span property="eli:related eli:consolidated_by" rev="dcterms:isPartOf eli:consolidates" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B" typeof="besluit:Besluit"></span>
   </div>
   <div property="prov:generated" typeof="besluit:Besluit" resource="https://www.aalter.be/File/Download/30162/57A22F13C4F05BE09DFA919C0503321B">
-      <span property="rdf:type" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"></span>
+      <span property="rdf:type" resource="https://data.vlaanderen.be/id/concept/BesluitDocumentType/GecoördineerdReglement"></span>
       <span property="eli:title" datatype="xsd:string" content="Het gewijzigde arbeidsreglement voor de Academie voor muziek, woord en dans"></span>
-      <div property="eli:realizes" content="https://data.aalter.be/id/rechtsgrond/12.1234.1234.1234" typeof="eli:LegalResource">
-        <span property="eli:type_document" content="https://data.vlaanderen.be/id/concept/BesluitDocumentType/Arbeidsreglement"></span>
+      <div property="eli:realizes" resource="https://data.aalter.be/id/rechtsgrond/12.1234.1234.1234" typeof="eli:LegalResource">
+        <span property="eli:type_document" resource="https://data.vlaanderen.be/id/concept/BesluitDocumentType/Arbeidsreglement"></span>
       </div>
   </div>
     </div>
-</div>
 </div>
 ```
 
